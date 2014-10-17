@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -641,7 +641,7 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "Couldn't find the tag specified...returning a value of -1");
+                frm.logText("Couldn't find the tag specified...returning a value of -1", Color.Yellow);
             }
             return -1;
         }
@@ -662,7 +662,7 @@ namespace IceBlink
                     }
                     // * sinopip, 16.08.14
                     if (frm.debugMode)
-                    IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                        frm.logText("Couldn't find the tag specified...returning a value of -1", Color.Yellow);
                     return -1;
                 }
             }
@@ -681,7 +681,7 @@ namespace IceBlink
                     }
                     // * sinopip, 16.08.14
                     if (frm.debugMode)
-                    IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                        frm.logText("Couldn't find the tag specified...returning a value of -1", Color.Yellow);
                     return -1;
                 }
                 #endregion
@@ -699,7 +699,7 @@ namespace IceBlink
                         }
                         // * sinopip, 16.08.14
                     	if (frm.debugMode)
-                    	IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                            frm.logText("Couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return -1;
                     }
                 }
@@ -718,7 +718,7 @@ namespace IceBlink
                         }
                         // * sinopip, 16.08.14
                    		if (frm.debugMode)
-                    	IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                            frm.logText("Couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return -1;
                     }
                 }
@@ -740,7 +740,7 @@ namespace IceBlink
                         }
                         // * sinopip, 16.08.14
                     	if (frm.debugMode)
-                    	IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                            frm.logText("Couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return -1;
                     }
                 }
@@ -759,7 +759,7 @@ namespace IceBlink
                         }
                         // * sinopip, 16.08.14
                     	if (frm.debugMode)
-                    	IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                            frm.logText("Couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return -1;
                     }
                 }
@@ -767,7 +767,7 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "couldn't find the object with the tag specified (only PCs, Creatures, Areas and Props), returning a value of -1");
+                frm.logText("couldn't find the object with the tag specified (only PCs, Creatures, Areas and Props), returning a value of -1", Color.Yellow);
             }
             return -1;
         }
@@ -958,7 +958,7 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "couldn't find the object with the tag (tag: " + objectTag + ") specified (only PCs, Creatures, Areas and Props)");
+                frm.logText("couldn't find the object with the tag (tag: " + objectTag + ") specified (only PCs, Creatures, Areas and Props)", Color.Yellow);
             }
         }
         public bool CheckGlobalInt(string variableName, string compare, int value)
@@ -1295,7 +1295,7 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "couldn't find the object with the tag (tag: " + objectTag + ") specified (only PCs, Creatures, Areas and Props)");
+                frm.logText("couldn't find the object with the tag (tag: " + objectTag + ") specified (only PCs, Creatures, Areas and Props)", Color.Yellow);
             }
             return false;
         }
@@ -1311,7 +1311,7 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "Couldn't find the tag specified...returning a value of -1");
+                frm.logText("Couldn't find the tag specified...returning a value of -1", Color.Yellow);
             }
             return -1;
         }
@@ -1330,7 +1330,7 @@ namespace IceBlink
                             return variable.Object;
                         }
                     }
-                    IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                    frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                     return -1;
                 }
             }
@@ -1347,7 +1347,7 @@ namespace IceBlink
                             return variable.Object;
                         }
                     }
-                    IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                    frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                     return -1;
                 }
                 #endregion
@@ -1363,7 +1363,7 @@ namespace IceBlink
                                 return variable.Object;
                             }
                         }
-                        IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                        frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return -1;
                     }
                 }
@@ -1380,7 +1380,7 @@ namespace IceBlink
                                 return variable.Object;
                             }
                         }
-                        IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                        frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return -1;
                     }
                 }
@@ -1400,7 +1400,7 @@ namespace IceBlink
                                 return variable.Object;
                             }
                         }
-                        IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                        frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return -1;
                     }
                 }
@@ -1417,7 +1417,7 @@ namespace IceBlink
                                 return variable.Object;
                             }
                         }
-                        IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                        frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return -1;
                     }
                 }
@@ -1425,7 +1425,7 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "couldn't find the object with the tag specified (only PCs, Creatures, Areas and Props), returning a value of -1");
+                frm.logText("couldn't find the object with the tag specified (only PCs, Creatures, Areas and Props), returning a value of -1", Color.Yellow);
             }
             return -1;
         }
@@ -1606,7 +1606,7 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "couldn't find the object with the tag specified (only PCs, Creatures, Areas and Props)");
+                frm.logText("couldn't find the object with the tag specified (only PCs, Creatures, Areas and Props)", Color.Yellow);
             }
         }
         #endregion
@@ -1708,12 +1708,18 @@ namespace IceBlink
                         CreatureUsesTrait(crt);
                     }
                 }
+                else if ((ChosenAction)ActionToTake == ChosenAction.DoNothing) //JamesManhattan 10/9/14 added option to do nothing, especially useful if you hijack the crtOnStartCombatTurn to be an entire A.I.
+                {                    
+                    //IBMessageBox.Show(gm, "does nothing!: " );
+                    //frm.currentCombat.logText(crt.Name + " does nothing...", Color.DarkRed);
+      
+                }
                 ActionToTake = null;
                 SpellToCast = null;
                 TraitToUse = null;
 
                 #region onEndCombatTurn
-                // run OnStartCombatTurn script
+                // run onEndCombatTurn script
                 var scriptEndCrt = crt.OnEndCombatTurn;
                 frm.doScriptBasedOnFilename(scriptEndCrt.FilenameOrTag, scriptCrt.Parm1, scriptCrt.Parm2, scriptCrt.Parm3, scriptCrt.Parm4);
                 #endregion
@@ -1742,14 +1748,14 @@ namespace IceBlink
                 if (crt_pt.HP > 0)
                 {
                     #region OnAttack
-                    // run OnStartCombatTurn script 
+                    // run OnAttack script 
                     CombatTarget = char_pt;
                     CombatSource = crt_pt;
                     var scriptCrt = crt_pt.OnAttack;
                     frm.doScriptBasedOnFilename(scriptCrt.FilenameOrTag, scriptCrt.Parm1, scriptCrt.Parm2, scriptCrt.Parm3, scriptCrt.Parm4);
                     #endregion
                     #region CreatureAttack
-                    // run OnStartCombatTurn script 
+                    // run dsAttackCreature script 
                     CombatTarget = char_pt;
                     CombatSource = crt_pt;
                     frm.doScriptBasedOnFilename("dsAttackCreature.cs", "none", "none", "none", "none");
@@ -1783,14 +1789,14 @@ namespace IceBlink
                     if (crt_pt.HP > 0)
                     {
                         #region OnAttack
-                        // run OnStartCombatTurn script 
+                        // run OnAttack script 
                         CombatTarget = char_pt;
                         CombatSource = crt_pt;
                         var scriptCrt = crt_pt.OnAttack;
                         frm.doScriptBasedOnFilename(scriptCrt.FilenameOrTag, scriptCrt.Parm1, scriptCrt.Parm2, scriptCrt.Parm3, scriptCrt.Parm4);
                         #endregion
                         #region CreatureAttack
-                        // run OnStartCombatTurn script 
+                        // run dsAttackCreature script 
                         CombatTarget = char_pt;
                         CombatSource = crt_pt;
                         frm.doScriptBasedOnFilename("dsAttackCreature.cs", "none", "none", "none", "none");
@@ -1806,6 +1812,38 @@ namespace IceBlink
                     #endregion
                 }
             }
+        }
+        public void CreatureMoves(Creature crt_pt, PC char_pt)
+        {
+
+            char_pt = (PC)CombatTarget;
+            // determine if ranged or melee
+            
+            
+                setupPathfindArray(crt_pt, char_pt);
+                pathfinder.Squares[crt_pt.CombatLocation.X, crt_pt.CombatLocation.Y].ContentCode = SquareContent.Monster;
+                pathfinder.Squares[char_pt.CombatLocation.X, char_pt.CombatLocation.Y].ContentCode = SquareContent.Hero;
+                Recalculate(crt_pt);
+                setupHeroSquares(char_pt, crt_pt);
+                navigatePath(crt_pt);
+                frm.currentCombat.logText(crt_pt.Name + " Moving towards ", Color.LightGray);                
+            
+        }
+        public void CreatureMoves(Creature crt_pt, Creature crt_tgt) //JamesManhattan 10/9/14 needed a function to cause creature to move next to another creature!
+        {
+
+            crt_tgt = (Creature)CombatTarget;
+            // determine if ranged or melee
+
+
+            setupPathfindArray(crt_pt, crt_tgt);
+            pathfinder.Squares[crt_pt.CombatLocation.X, crt_pt.CombatLocation.Y].ContentCode = SquareContent.Monster;
+            pathfinder.Squares[crt_tgt.CombatLocation.X, crt_tgt.CombatLocation.Y].ContentCode = SquareContent.Hero; //JamesManhattan 10/9/14 needs to be Hero even though its not 
+            Recalculate(crt_pt);
+            setupMonsterSquares(crt_tgt, crt_pt);
+            navigatePath(crt_pt);
+            frm.currentCombat.logText(crt_pt.Name + " Moving towards ", Color.LightGray);
+
         }
         public void CreatureCastsSpell(Creature crt)
         {
@@ -2339,7 +2377,7 @@ namespace IceBlink
                 if ((crt.HP > 0) && (crt.Status != CharBase.charStatus.Held) && (crt.Status != CharBase.charStatus.Sleeping)) //SD_20131215
                 {
                     //if started in distance = 1 and now distance = 2 then do attackOfOpportunity
-                    if ((CalcDistance(crt.CombatLocation, lastPlayerLocation) == 1) && (CalcDistance(crt.CombatLocation, pc.CombatLocation) == 2))
+                    if ((CalcDistance(crt, lastPlayerLocation) == 1) && (CalcDistance(crt, pc) == 2))
                     {
                         frm.currentCombat.logText("Attack of Opportunity by: " + crt.Name, Color.Blue);
                         frm.currentCombat.logText(Environment.NewLine, Color.Black);
@@ -2442,7 +2480,17 @@ namespace IceBlink
                         c.logText(attackRoll.ToString() + " + " + attackMod.ToString() + " >= " + defense.ToString(), Color.Black);
                         c.logText(Environment.NewLine, Color.Black);
                         c.logText(Environment.NewLine, Color.Black);
-                                                
+
+                        #region onScoringHit script of creature
+                        IceBlinkCore.ScriptSelectEditorReturnObject scriptItem = crt.OnScoringHit;
+                        frm.doScriptBasedOnFilename(scriptItem.FilenameOrTag, scriptItem.Parm1, scriptItem.Parm2, scriptItem.Parm3, scriptItem.Parm4);
+                        #endregion
+
+                        #region onHit script of the player who got hit
+                        //IceBlinkCore.ScriptSelectEditorReturnObject scriptItem = pc.onHit;                
+                        frm.doScriptBasedOnFilename("pcOnHit.cs", "none", "none", "none", "none");
+                        #endregion
+
                         pc.HP = pc.HP - damage;
                         if (pc.HP <= 0)
                         {
@@ -2689,6 +2737,129 @@ namespace IceBlink
                 dist = deltaX;
             else
                 dist = deltaY;
+            return dist;
+        }
+        public int CalcDistance(PC disCr, PC disPC) //JamesManhattan 10/11/14 overloading this function so we can pass it creatures and pcs instead of always CombatLocation Points. Also allow for Large and Huge creatures
+        {
+            Point locCr = disCr.CombatLocation;
+            Point locPc = disPC.CombatLocation;
+
+            int dist = 0;
+            dist = CalcDistance(locCr, locPc);
+
+            return dist;
+        }
+        public int CalcDistance(Creature disCr, PC disPC) //JamesManhattan 10/11/14 overloading this function so we can pass it creatures and pcs instead of always CombatLocation Points. Also allow for Large and Huge creatures
+        {
+            Point locCr = disCr.CombatLocation;
+            Point locPc = disPC.CombatLocation;
+            Point locCr2 = disCr.CombatLocation;            
+            int dist = 0;
+            int dist2 = 0;
+            dist = CalcDistance(locCr, locPc);
+
+            if (disCr.Size > 1)
+            {
+                for (int x = 0; x <= disCr.Size-1; x++)
+                {
+                    for (int y = 0; y <= disCr.Size-1; y++)
+                    {
+                        locCr2.X = locCr.X + x;
+                        locCr2.Y = locCr.Y + y;
+                        dist2 = CalcDistance(locCr2, locPc);
+                        //frm.currentCombat.logText("crt to pc calcdistance x="+ x.ToString() + ",y=" + y.ToString() , Color.Blue);
+                        //frm.currentCombat.logText("crt to pc calcdistance dist=" + dist.ToString(), Color.Blue);
+                        if (dist2 < dist) { dist = dist2; }
+                    }
+                }
+            }
+          
+            return dist;
+        }
+        public int CalcDistance(Creature disCr, Point locPc) //JamesManhattan 10/11/14 overloading this function so we can pass it creatures and pcs instead of always CombatLocation Points. Also allow for Lrge and Huge creatures/
+        {
+            Point locCr = disCr.CombatLocation;
+            //Point locPc = disPC.CombatLocation;
+            Point locCr2 = disCr.CombatLocation;
+            int dist = 0;
+            int dist2 = 0;
+            dist = CalcDistance(locCr, locPc);
+
+            if (disCr.Size > 1 )
+            {
+                for (int x = 0; x <= disCr.Size - 1; x++)
+                {
+                    for (int y = 0; y <= disCr.Size - 1; y++)
+                    {
+                        locCr2.X = locCr.X + x;
+                        locCr2.Y = locCr.Y + y;
+                        dist2 = CalcDistance(locCr2, locPc);
+                        //frm.currentCombat.logText("crt to point calcdistance dist=" + dist.ToString(), Color.Blue);
+                        if (dist2 < dist) { dist = dist2; }
+                    }
+                }
+            }
+      
+            return dist;
+        }
+        public int CalcDistance(Creature disCr, Creature disPC) //JamesManhattan 10/11/14 overloading this function so we can pass it creatures and pcs instead of always CombatLocation Points. 
+        {
+            Point locCr = disCr.CombatLocation;
+            Point locPc = disPC.CombatLocation;
+            Point locCr2 = disCr.CombatLocation;
+            Point locPc2 = disCr.CombatLocation;
+            int dist = 0;
+            int dist2 = 0;
+            dist = CalcDistance(locCr, locPc);
+                     
+                for (int x = 0; x <= disCr.Size - 1; x++)
+                {
+                    for (int y = 0; y <= disCr.Size - 1; y++)
+                    {
+                       
+                            for (int a = 0; a <= disPC.Size - 1; a++)
+                            {
+                                for (int b = 0; b <= disPC.Size - 1; b++)
+                                {
+                                    locCr2.X = locCr.X + x;
+                                    locCr2.Y = locCr.Y + y;
+                                    locPc2.X = locPc.X + a;
+                                    locPc2.Y = locPc.Y + b;
+                                    dist2 = CalcDistance(locCr2, locPc2);
+                                    if (dist2 < dist) { dist = dist2; }
+                                }
+                            }                        
+                    }
+                }
+            
+        
+            return dist;
+        }
+        public int CalcDistance(PC disPC, Creature disCr) //JamesManhattan 10/11/14 overloading this function so we can pass it creatures and pcs instead of always CombatLocation Points. 
+        {
+            Point locCr = disCr.CombatLocation;
+            Point locPc = disPC.CombatLocation;
+            Point locCr2 = disCr.CombatLocation;
+            int dist = 0;
+            int dist2 = 0;
+            dist = CalcDistance(locCr, locPc);
+
+            if (disCr.Size > 1)
+            {
+                for (int x = 0; x <= disCr.Size - 1; x++)
+                {
+                    for (int y = 0; y <= disCr.Size - 1; y++)
+                    {
+                        locCr2.X = locCr.X + x;
+                        locCr2.Y = locCr.Y + y;
+                        dist2 = CalcDistance(locCr2, locPc);
+                        //frm.currentCombat.logText("Pc to crt calcdistance x=" + x.ToString() + ",y=" + y.ToString(), Color.Blue);
+                        //frm.currentCombat.logText("Pc to crt calcdistance dist=" + dist.ToString(), Color.Blue);
+                        if (dist2 < dist) { dist = dist2; }
+                    }
+                }
+            }
+
             return dist;
         }
         public Creature GetCreatureWithLowestHP()
@@ -3882,7 +4053,7 @@ namespace IceBlink
                             return variable.Value;
                         }
                     }
-                    	IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                    frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                     return null;
                 }
             }
@@ -3900,7 +4071,7 @@ namespace IceBlink
                         }
                     }
                     if (frm.debugMode)
-                    	IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                        frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                     return null;
                 }
                 #endregion
@@ -3917,7 +4088,7 @@ namespace IceBlink
                             }
                         }
                     	if (frm.debugMode)
-                    		IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                            frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return null;
                     }
                 }
@@ -3935,7 +4106,7 @@ namespace IceBlink
                             }
                         }
                    		if (frm.debugMode)
-                    		IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                            frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return null;
                     }
                 }
@@ -3956,7 +4127,7 @@ namespace IceBlink
                             }
                         }
                     	if (frm.debugMode)
-                    		IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                            frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return null;
                     }
                 }
@@ -3974,7 +4145,7 @@ namespace IceBlink
                             }
                         }
                     	if (frm.debugMode)
-                    		IBMessageBox.Show(gm, "Found the object, but couldn't find the tag specified...returning a value of -1");
+                            frm.logText("Found the object, but couldn't find the tag specified...returning a value of -1", Color.Yellow);
                         return null;
                     }
                 }
@@ -3982,7 +4153,7 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "couldn't find the object with the tag specified (only PCs, Creatures, Areas and Props), returning a value of -1");
+                frm.logText("couldn't find the object with the tag specified (only PCs, Creatures, Areas and Props), returning a value of -1", Color.Yellow);                
             }
             return null;
         }
@@ -4146,7 +4317,8 @@ namespace IceBlink
             }
             if (frm.debugMode) //SD_20131102
             {
-                IBMessageBox.Show(gm, "couldn't find the object with the tag (tag: " + objectTag + ") specified (only PCs, Creatures, Areas and Props)");
+                frm.logText("couldn't find the object with the tag (tag: " + objectTag + ") specified (only PCs, Creatures, Areas and Props)", Color.Yellow);
+                //IBMessageBox.Show(gm, "couldn't find the object with the tag (tag: " + objectTag + ") specified (only PCs, Creatures, Areas and Props)");
             }
         }        
 	//
