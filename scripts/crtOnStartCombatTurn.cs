@@ -464,7 +464,7 @@ namespace IceBlink
                                     //if (c.IsVisibleLineOfSight(crt.CombatLocation, selectedPoint)) //make sure creature caster can actually see the target point. //this causes errors I think on points outside the map
                                     //{
                                     //c.logText("Selecting x=" + selectedPoint.X.ToString() + "y=" + selectedPoint.Y.ToString(), Color.Purple);
-                                    if (selectedPoint == crt.CombatLocation) {
+                                    if (sf.CalcDistance(crt.CombatLocation, selectedPoint) <= sf.SpellToCast.AoeRadiusOrLength) {
                                         utility = utility - 4; //the creature at least attempts to avoid hurting itself, but if surrounded might fireball itself!
                                         if (crt.HP <= crt.HPMax / 4) //caster is wounded, definately avoids itself.
                                         {
@@ -562,7 +562,7 @@ namespace IceBlink
                                         //if (c.IsVisibleLineOfSight(crt.CombatLocation, selectedPoint)) //make sure creature caster can actually see the target point. //this causes errors I think on points outside the map
                                         //{
                                             //c.logText("Selecting x=" + selectedPoint.X.ToString() + "y=" + selectedPoint.Y.ToString(), Color.Purple);
-                                            if (selectedPoint == crt.CombatLocation) {
+                                            if (sf.CalcDistance(crt.CombatLocation, selectedPoint) <= sf.SpellToCast.AoeRadiusOrLength) {
                                                 utility = utility - 4; //the creature at least attempts to avoid hurting itself, but if surrounded might fireball itself!
                                             } 
                                             foreach (Creature crtr in c.com_encounter.EncounterCreatureList.creatures) //if its allies are in the burst subtract a point, or half depending on how evil it is.
