@@ -15,7 +15,8 @@ namespace IceBlink
         public void Script(ScriptFunctions sf, string p1, string p2, string p3, string p4)
         {
             // C# code goes here
-            //This will summon a monster by Tag, it requires a custom function in Game.cs called DisposePCOnlyCombatSpritesTextures(); which is just the foreach PC loop of DisposeCombatSpritesTextures(); A COPY OF THIS IS FAR BELOW IN COMMENTS
+            //This will summon a Prop by Tag, it requires a custom script in Game.cs called DisposePCOnlyCombatSpritesTextures(); which is just the foreach PC loop of DisposeCombatSpritesTextures();
+            //a copy of DisposePCOnlyCombatSpritesTextures is included in comments at very bottom of this file.
             if (sf.CombatSource is PC)
             {
                 PC source = (PC)sf.CombatSource;
@@ -51,21 +52,21 @@ namespace IceBlink
                     crt = summon.DeepCopy();
                     crt.Tag = summon.Tag + "Ally" + i;
                     //crt.CombatLocation = new Point(0, i + 1);               
-                    //check if there is a creature already in the square chosen, then find nearest empty spot at random. this requires a custom checkPointCollision script in Combat.cs
-                    //int j = 0;
-                    //int k = 0;
-                    //do
-                    //{
-                    //    j = sf.gm.Random(-1, 1);
-                    //    k = sf.gm.Random(-1, 1);
-                    //    target.X = target.X + j;
-                    //    target.Y = target.Y + k;
-                    //} while (c.checkPointCollision(target)) ;                                        
+                    //check if there is a creature already in the square chosen, then find nearest empty spot at random.
+                    int j = 0;
+                    int k = 0;
+                    do
+                    {
+                        j = sf.gm.Random(-1, 1);
+                        k = sf.gm.Random(-1, 1);
+                        target.X = target.X + j;
+                        target.Y = target.Y + k;
+                    } while (c.checkPointCollision(target)) ;                                        
 
                     crt.CombatLocation = target; 
 
                     crt.Tag = "Summoned " + summon.Name + " " + i; // * need to check for further summonings!
-                    crt.OnStartCombatTurn.FilenameOrTag = "crtPCAllyOnStartCombatTurn.cs"; //overwrite the AI to make it friendly to the players. not working right now
+                    crt.OnStartCombatTurn.FilenameOrTag = "crtPCAllyOnStartCombatTurn.cs"; //overwrite the AI to make it friendly to the players.
                    
                     //below line is necessary
                     if (File.Exists(sf.gm.mainDirectory + "\\modules\\" + sf.gm.module.ModuleFolderName + "\\graphics\\sprites\\tokens\\module\\" + crt.SpriteFilename)) 
@@ -114,13 +115,14 @@ namespace IceBlink
         }
         
     }
-    //THIS FUNCTION needs to be placed in Game.cs and compiled into a new program
+    //This function needs to be put into Game.cs and then a new IceBlinkCore.dll compiled from it.
     //public void DisposePCOnlyCombatSpritesTextures()
-    //{ 
-	//foreach (SharpDX.Direct3D9.Sprite spr in pcCombatSprites)
-	//{
-	//	spr.Dispose();
-	//}
-	//pcCombatSprites.Clear();
-    //}
+    //    {
+    //        foreach (SharpDX.Direct3D9.Sprite spr in pcCombatSprites)
+    //        {
+    //            spr.Dispose();
+    //        }    //        
+    //        //clear the floaty text pools because they cause issues.
+    //        shadowCombatTextPool.Clear();
+    //    }
 }
