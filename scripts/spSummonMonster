@@ -15,7 +15,7 @@ namespace IceBlink
         public void Script(ScriptFunctions sf, string p1, string p2, string p3, string p4)
         {
             // C# code goes here
-            //This will summon a monster by Tag, it requires a custom script in Game.cs called DisposePCOnlyCombatSpritesTextures(); which is just the foreach PC loop of DisposeCombatSpritesTextures();
+            //This will summon a monster by Tag, it requires a custom function in Game.cs called DisposePCOnlyCombatSpritesTextures(); which is just the foreach PC loop of DisposeCombatSpritesTextures();
             if (sf.CombatSource is PC)
             {
                 PC source = (PC)sf.CombatSource;
