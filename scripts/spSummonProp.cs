@@ -17,6 +17,7 @@ namespace IceBlink
             // C# code goes here
             //This will summon a Prop by Tag, it requires a custom script in Game.cs called DisposePCOnlyCombatSpritesTextures(); which is just the foreach PC loop of DisposeCombatSpritesTextures();
             //a copy of DisposePCOnlyCombatSpritesTextures is included in comments at very bottom of this file.
+            //It is required to be a "Point" type target spell.
             if (sf.CombatSource is PC)
             {
                 PC source = (PC)sf.CombatSource;
@@ -53,15 +54,15 @@ namespace IceBlink
                     crt.Tag = summon.Tag + "Ally" + i;
                     //crt.CombatLocation = new Point(0, i + 1);               
                     //check if there is a creature already in the square chosen, then find nearest empty spot at random.
-                    int j = 0;
-                    int k = 0;
-                    do
-                    {
-                        j = sf.gm.Random(-1, 1);
-                        k = sf.gm.Random(-1, 1);
-                        target.X = target.X + j;
-                        target.Y = target.Y + k;
-                    } while (c.checkPointCollision(target)) ;                                        
+                    //int j = 0;
+                    //int k = 0;
+                    //do
+                    //{
+                    //    j = sf.gm.Random(-1, 1);
+                    //    k = sf.gm.Random(-1, 1);
+                    //    target.X = target.X + j;
+                    //    target.Y = target.Y + k;
+                    //} while (c.checkPointCollision(target)) ;  //this was a custom function to check for collisions of creatures or walls already in the square picked.                                      
 
                     crt.CombatLocation = target; 
 
