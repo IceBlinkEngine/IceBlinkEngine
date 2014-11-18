@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections;
 using System.Text;
@@ -145,6 +145,10 @@ namespace IceBlinkCore
         public void SaveContentConversation(string fileName)
         {
             StreamWriter writer = null;
+            if (fileName.Substring(fileName.Length-4,4) != ".xml") //JamesManhattan 11/17/14 added this just to be sure to save conversations correctly, it worked!!
+            {
+                fileName = fileName + ".xml";
+            }
             try
             {
                 XmlSerializer ser = new XmlSerializer(typeof(Convo));
