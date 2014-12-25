@@ -43,9 +43,15 @@ namespace IceBlinkCore
         private int idleNumberOfFrames = 1;
         private int attackingNumberOfFrames = 1;
         private int walkingNumberOfFrames = 1;
+        // * sinopip, 25.12.14
+        private int deathNumberOfFrames = 1;
+        //
         private int idleFPS = 4;
         private int attackingFPS = 4;
         private int walkingFPS = 4;
+        // * sinopip, 25.12.14
+        private int deathFPS = 4;
+        //
         private int idleDelay = 2000;
         [XmlIgnore]
         public Rectangle oSourceRect = new Rectangle(0, 0, 64, 64);
@@ -233,6 +239,14 @@ namespace IceBlinkCore
             get { return walkingNumberOfFrames; }
             set { walkingNumberOfFrames = value; }
         }
+        // * sinopip, 25.12.14
+        [XmlElement]
+        public int DeathNumberOfFrames
+        {
+            get { return deathNumberOfFrames; }
+            set { deathNumberOfFrames = value; }
+        }
+        //
         [XmlElement]
         public int IdleFPS
         {
@@ -251,6 +265,14 @@ namespace IceBlinkCore
             get { return walkingFPS; }
             set { walkingFPS = value; }
         }
+        // * sinopip, 25.12.14
+        [XmlElement]
+        public int DeathFPS
+        {
+            get { return deathFPS; }
+            set { deathFPS = value; }
+        }
+        //        
         [XmlElement]
         public int IdleDelay
         {

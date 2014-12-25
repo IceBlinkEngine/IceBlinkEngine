@@ -57,6 +57,12 @@ namespace IceBlink
         public int combatRoundNumber = 0;
         public bool okToDrawHighlights = true;
         public bool showStepNumbers = false;
+        // * sinopip, 20.12.14
+		public bool is_upscrolling = false;
+		public bool is_downscrolling = false;
+		public bool is_leftscrolling = false;
+		public bool is_rightscrolling = false;
+		//
         
 
         public Combat(Game game, Form1 frm, Encounter encounter)
@@ -64,6 +70,10 @@ namespace IceBlink
             InitializeComponent();
             combatTimer.Enabled = true;
             combatTimer.Stop();
+            // * sinopip, 20.12.14
+            scrollTimer.Enabled = true;
+            scrollTimer.Stop();
+            //
             com_game = game;
             com_frm = frm;
             com_encounter = encounter;
@@ -148,6 +158,16 @@ namespace IceBlink
             numAnimationDelay.Value = animationDelay;
             frm.playCombatAreaMusicSounds();
             combatTimer.Start();
+            // * sinopip, 20.12.14
+            scrollTimer.Start();
+            foreach (Creature crtr in com_encounter.EncounterCreatureList.creatures)
+            	com_frm.sf.SetLocalInt(crtr.Tag, "HasDied", 0);
+            foreach (PC pc in game.playerList.PCList)
+            	if (pc.HP > 0)
+            		com_frm.sf.SetLocalInt(pc.Tag, "HasDied", 0);
+            	else
+            		com_frm.sf.SetLocalInt(pc.Tag, "HasDied", 1);
+            //
         }
         private void SetupScreenSize()
         {
@@ -1355,6 +1375,8 @@ namespace IceBlink
                          #endregion
                         // * sinopip, 10.08.14
                         //doOnDeathScripts();   //JamesManhattan temp commented out for test 9/25/14 only orig one, this should go in different place than here
+                        // * sinopip, 20.12.14 : needed to play sound and animation ; changed this class constructor to init "HasDied" LocalInts
+                        doOnDeathScripts();
                         //cleanUpCreatures(); //JamesManhattan test if this works 9/25/14
                         //resetMoveOrder(); //JamesManhattan test if this works 9/25/14
 
@@ -1391,6 +1413,19 @@ namespace IceBlink
                 Thread.Sleep(sleep);
             }
         }
+        // * sinopip, 25.12.14
+        public void deathPCAnimation(PC pc, int PcIndex)
+        {
+            int deathRowIndex = 3;
+            int sleep = 1000 / pc.CharSprite.DeathFPS;
+            //start a for loop based on the number of frames in the attack row
+            for (int x = 0; x < pc.CharSprite.DeathNumberOfFrames; x++)
+            {
+                com_game.CombatAreaPcAnimateRenderAll(PcIndex, x, deathRowIndex);
+                Thread.Sleep(sleep);
+            }
+        }
+        //
         public void playPcAttackSound(PC pc, string soundFileName)
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -1422,6 +1457,44 @@ namespace IceBlink
             Thread.Sleep(300);
             player.Dispose();
         }
+        // * sinopip, 22.12.14
+        public void playItemHitSound(Item it)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            try
+            {
+                if (File.Exists(com_game.mainDirectory + "\\modules\\" + com_game.module.ModuleFolderName + "\\sounds\\soundFX\\" + it.ItemOnHitSound))
+                    player.SoundLocation = com_game.mainDirectory + "\\modules\\" + com_game.module.ModuleFolderName + "\\sounds\\soundFX\\" + it.ItemOnHitSound;
+                else if (File.Exists(com_game.mainDirectory + "\\data\\sounds\\soundFX\\" + it.ItemOnHitSound))
+                    player.SoundLocation = com_game.mainDirectory + "\\data\\sounds\\soundFX\\" + it.ItemOnHitSound;
+                else
+                    return;
+            	player.Play();
+            }
+            catch { }
+            Thread.Sleep(300);
+            player.Dispose();
+        }
+		//        
+        // * sinopip, 22.12.14
+        public void playCreatureHitSound(Creature crt)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(); 			       
+            try
+            {
+                if (crt.OnHitSound == "none")
+                    player.SoundLocation = com_game.mainDirectory + "\\data\\sounds\\soundFX\\punch.wav";
+                else if (File.Exists(com_game.mainDirectory + "\\modules\\" + com_game.module.ModuleFolderName + "\\sounds\\soundFX\\" + crt.OnHitSound))
+            			player.SoundLocation = com_game.mainDirectory + "\\modules\\" + com_game.module.ModuleFolderName + "\\sounds\\soundFX\\" + crt.OnHitSound;
+                else
+                    player.SoundLocation = com_game.mainDirectory + "\\data\\sounds\\soundFX\\punch.wav";
+            }
+            catch { }
+            player.Play();
+            Thread.Sleep(100);
+            player.Dispose();
+        }
+		//        
         private void doCreatureTurn()
         {
             try
@@ -1627,7 +1700,7 @@ namespace IceBlink
             com_game.spriteCreatureCombatDraw(crt.CombatLocation.X * com_game._squareSize, crt.CombatLocation.Y * com_game._squareSize, crt, 0, attackRowIndex, 100);
             com_game.UpdateCombat();
             */
-        }
+        }        
         public void playCreatureAttackSound(Creature cr)
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer();
@@ -1682,33 +1755,77 @@ namespace IceBlink
             Thread.Sleep(300);
             player.Dispose();
         }
-
+        // * sinopip, 25.12.15
+        public void deathCreatureAnimation(Creature crt)
+        {
+            int deathRowIndex = 3;
+            int sleep = 1000 / crt.CharSprite.DeathFPS;
+            //start a for loop based on the number of frames in the attack row
+            for (int x = 0; x < crt.CharSprite.DeathNumberOfFrames; x++)
+            {
+                com_game.CombatAreaCreatureAnimateRenderAll(crt, x, deathRowIndex);
+                Thread.Sleep(sleep);
+            }
+        }
+        //
+        
         #region Helper Functions
         // * sinopip, 14.08.14
-        // * do scriptCrtDth only once per combat (unless revive which must reset (to 0) the local int shown below
-        private void doOnDeathScripts()
+        // * do scriptCrtDth of a creature only once per combat,
+		// * unless a special healing which must reset the "HasDied" LocalInt to 0
+		// * 20.12.14 private to public to allow to call it from ScriptFunctions (as spells need it)
+        public void doOnDeathScripts()
         {
+        	// * sinopip, 20.12.14
+        	System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+        	//
             foreach (Creature crtr in com_encounter.EncounterCreatureList.creatures)
             {
-            	if (crtr.HP <= 0) //&& com_frm.sf.GetLocalInt(crtr.Tag, "HasDied")!=1)  //had to remove the getlocalint for the tag, because if its empty it causes error JamesManhattan 9/25/14
+            	//if (crtr.HP <= 0) //&& com_frm.sf.GetLocalInt(crtr.Tag, "HasDied")!=1)  //had to remove the getlocalint for the tag, because if its empty it causes error JamesManhattan 9/25/14
+            	// * sinopip, 20.12.14
+            	// * changed this class constructor to init "HasDied" LocalInts
+            	if (crtr.HP <= 0 && com_frm.sf.GetLocalInt(crtr.Tag, "HasDied")!=1)
                 {
             		Thread.Sleep(100);
                     com_frm.sf.CombatSource = crtr;
                     var scriptCrtDth = crtr.OnDeath;
                     com_frm.doScriptBasedOnFilename(scriptCrtDth.FilenameOrTag, scriptCrtDth.Parm1, scriptCrtDth.Parm2, scriptCrtDth.Parm3, scriptCrtDth.Parm4);
+                    // * sinopip, 20.12.14
+        			try {
+            			player.SoundLocation = com_game.mainDirectory + "\\modules\\" + com_game.module.ModuleFolderName + "\\sounds\\soundFX\\" + crtr.OnDeathSound;
+        				player.Play();
+		            	Thread.Sleep(100);
+		            } catch { }
+                    // * sinopip, 25.12.14
+		            // * default death animation, or from spritsheet
+		            if (crtr.CharSprite.DeathNumberOfFrames <= 1)
+		            	com_frm.currentCombat.drawEndEffect(crtr.CombatLocation, 0, "generic_death.spt"); // if file doesn't exists, this does nothing
+		            else
+		            	deathCreatureAnimation(crtr);
+		            Thread.Sleep(100);
+                    //
                     com_frm.sf.SetLocalInt(crtr.Tag, "HasDied", 1);
                     Thread.Sleep(100);
                 }
             }
             foreach (PC chr in com_game.playerList.PCList)
             {
-                if (chr.HP <= 0) // && com_frm.sf.GetLocalInt(chr.Tag, "HasDied") != 1) //had to remove the getlocalint for the tag, because if its empty it causes error JamesManhattan 9/25/14
+                //if (chr.HP <= 0) // && com_frm.sf.GetLocalInt(chr.Tag, "HasDied") != 1) //had to remove the getlocalint for the tag, because if its empty it causes error JamesManhattan 9/25/14
+                // * sinopip, 20.12.14
+            	// * changed this class constructor to init "HasDied" LocalInts
+            	if (chr.HP <= 0 && com_frm.sf.GetLocalInt(chr.Tag, "HasDied")!=1)
                 {
                 	Thread.Sleep(100);
-                    com_frm.sf.CombatSource = chr;
+                    com_frm.sf.CombatSource = chr;                 
                     var scriptCrtDth = chr.OnDeath;
                     com_frm.doScriptBasedOnFilename(scriptCrtDth.FilenameOrTag, scriptCrtDth.Parm1, scriptCrtDth.Parm2, scriptCrtDth.Parm3, scriptCrtDth.Parm4);
-                    com_frm.sf.SetLocalInt(chr.Tag, "HasDied", 1);
+                    // * sinopip, 25.12.14
+                    if (chr.CharSprite.DeathNumberOfFrames > 1)
+                    	for (int index = 0; index < com_game.playerList.PCList.Count; index++)
+                    		if (com_game.playerList.PCList[index].NameWithNotes == chr.NameWithNotes)
+                    			deathPCAnimation(chr, index);
+                    //
+		            com_frm.sf.SetLocalInt(chr.Tag, "HasDied", 1);
                     Thread.Sleep(100);
                 }
             }
@@ -4079,6 +4196,22 @@ namespace IceBlink
 
             }
             #endregion            
+            
+            // * sinopip, 20.12.14
+            // * enable scroll area when mouse is on borders (scrollbar position values are negative)
+            is_leftscrolling = false;
+        	is_rightscrolling = false;
+        	is_upscrolling = false;
+        	is_downscrolling = false;
+        	if (mousex < 100 + -panel1.AutoScrollPosition.X) 
+        		is_leftscrolling = true;
+        	if (mousey < 100 + -panel1.AutoScrollPosition.Y) 
+        		is_upscrolling = true;
+        	if (mousex > (panel1.Width-100) + -panel1.AutoScrollPosition.X)
+        		is_rightscrolling = true;
+        	if (mousey > (panel1.Height-100) + -panel1.AutoScrollPosition.Y)
+        		is_downscrolling = true;
+			//        	
         }
         public void drawEndEffect(Point target, int radius, string spriteFilename)
         {
@@ -4415,6 +4548,9 @@ namespace IceBlink
         private void Combat_FormClosed(object sender, FormClosedEventArgs e)
         {
             combatTimer.Stop();
+            // * sinopip, 20.12.14
+            scrollTimer.Stop();
+            //
             com_game.DisposeCombatSpritesTextures();
         }
         //JamesManhattan added this function to look up whether a player possesses a certain trait.
@@ -4426,7 +4562,33 @@ namespace IceBlink
             }
             return false;
         }
-        
+       
+        // * sinopip, 20.12.14
+		// * scroll the map (timer component of 25ms tick)
+        void ScrollTimerTick(object sender, EventArgs e)
+        {
+        	if (is_leftscrolling) 
+        		panel1.AutoScrollPosition = new Point(
+        			-panel1.AutoScrollPosition.X - 16,
+        			-panel1.AutoScrollPosition.Y);
+        	if (is_rightscrolling) panel1.AutoScrollPosition = new Point(
+        			-panel1.AutoScrollPosition.X + 16,
+        			-panel1.AutoScrollPosition.Y);
+        	if (is_upscrolling) panel1.AutoScrollPosition = new Point(
+        			-panel1.AutoScrollPosition.X,
+        			-panel1.AutoScrollPosition.Y - 16);
+        	if (is_downscrolling) panel1.AutoScrollPosition = new Point(
+        			-panel1.AutoScrollPosition.X,
+        			-panel1.AutoScrollPosition.Y + 16);    	
+        }
+        void CombatRenderPanelMouseLeave(object sender, EventArgs e)
+        {
+            is_leftscrolling = false;
+        	is_rightscrolling = false;
+        	is_upscrolling = false;
+        	is_downscrolling = false;        	
+        }
+        //
     }
 
     public class MoveOrder

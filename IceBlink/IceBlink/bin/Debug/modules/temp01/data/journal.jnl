@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Journal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <categories>
+    <JournalCategories>
+      <OrderIndex>0</OrderIndex>
+      <Name>newCategory</Name>
+      <Tag>catTag548</Tag>
+      <Priority>Medium</Priority>
+      <Entries>
+        <JournalEntries>
+          <OrderIndex>0</OrderIndex>
+          <EntryTitle>newTitle</EntryTitle>
+          <EntryText>quest entry text</EntryText>
+          <Tag>entryTag549</Tag>
+          <EndPoint>false</EndPoint>
+        </JournalEntries>
+      </Entries>
+    </JournalCategories>
+  </categories>
+  <NextIdNum>552</NextIdNum>
+</Journal>

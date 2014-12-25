@@ -145,6 +145,12 @@ namespace IceBlinkCore
         public void SaveContentConversation(string fileName)
         {
             StreamWriter writer = null;
+            // * sinopip 22.12.14 - James' fix
+			if (fileName.Substring(fileName.Length-4,4) != ".xml") //JamesManhattan 11/17/14 added this just to be sure to save conversations correctly, it worked!!
+			{
+				fileName = fileName + ".xml";
+			}   
+			//
             try
             {
                 XmlSerializer ser = new XmlSerializer(typeof(Convo));

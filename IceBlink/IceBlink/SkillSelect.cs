@@ -63,6 +63,19 @@ namespace IceBlink
         {
             int index = 0;
             int row = 0;
+            // * sinopip, 20.12.14
+            this.Width += 50;
+            Panel p = new Panel();
+			p.Size = this.gbSpellList.Size;
+			p.Location = new System.Drawing.Point(0, 30);
+            p.Width += 10;
+			p.Height -= 30;
+			this.gbSpellList.Width += 10;
+			this.gbSkillDesc.Width += 10;
+			this.gbSpellList.Left -= 10;
+			//this.gbSkillDesc.Left += 10;
+            p.BackColor = this.gbSpellList.BackColor;
+            //            
             foreach (Skill sk in msc_pc.KnownSkillsList.skillsList)
             {
                 IceBlinkButtonMedium btnNew = new IceBlink.IceBlinkButtonMedium();
@@ -81,9 +94,17 @@ namespace IceBlink
                 btnNew.Click += new System.EventHandler(this.btnSelectedSpell_Click);
                 btnNew.MouseEnter += new EventHandler(this.btnSelectedSpell_Enter);
                 btnNew.setupAll(msc_game);
-                this.gbSpellList.Controls.Add(btnNew);
+                // * sinopip, 20.12.14
+                //this.gbSpellList.Controls.Add(btnNew);
+                p.Controls.Add(btnNew);
+                //
                 index++;
             }
+            // * sinopip, 20.12.14
+            p.AutoScroll = true;
+            p.HorizontalScroll.Visible = false;
+            this.gbSpellList.Controls.Add(p);
+            //            
         }
         private void btnSelectedSpell_Click(object sender, EventArgs e)
         {

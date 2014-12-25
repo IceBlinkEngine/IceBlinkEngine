@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sprite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ImageLayout>
+    <X>1</X>
+    <Y>1</Y>
+  </ImageLayout>
+  <SpriteSize>
+    <Width>64</Width>
+    <Height>64</Height>
+  </SpriteSize>
+  <Filename>fledge.spt</Filename>
+  <SpriteSheetFilename>fledge.png</SpriteSheetFilename>
+  <Actor>true</Actor>
+  <Tag>fledge</Tag>
+  <TopDown>false</TopDown>
+  <Animated>false</Animated>
+  <Show>true</Show>
+  <Visible>false</Visible>
+  <Looping>false</Looping>
+  <Location>
+    <X>0</X>
+    <Y>0</Y>
+  </Location>
+  <Frame>0</Frame>
+  <FrameRange>
+    <X>0</X>
+    <Y>59</Y>
+  </FrameRange>
+  <FPS>4</FPS>
+  <NumberOfFrames>1</NumberOfFrames>
+  <IdleNumberOfFrames>1</IdleNumberOfFrames>
+  <AttackingNumberOfFrames>1</AttackingNumberOfFrames>
+  <WalkingNumberOfFrames>1</WalkingNumberOfFrames>
+  <IdleFPS>4</IdleFPS>
+  <AttackingFPS>4</AttackingFPS>
+  <WalkingFPS>4</WalkingFPS>
+  <IdleDelay>2000</IdleDelay>
+</Sprite>

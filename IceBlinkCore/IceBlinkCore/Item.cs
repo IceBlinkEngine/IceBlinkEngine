@@ -145,6 +145,9 @@ namespace IceBlinkCore
         private string p_desc = ""; //item detailed description
         private UsableInSituation useableInSituation = UsableInSituation.Always;
         private string itemOnUseSound = "none";
+        // * sinopip, 22.12.14
+        private string itemOnHitSound = "none";
+        //
         private string projectileSpriteFilename = "none"; //sprite to use for projectiles
         private string spriteEndingFilename = "none"; //sprite to use for end effect of projectiles
         private category p_category = category.Armor; //catergory type (armor, weapon, ammo, etc.)
@@ -579,6 +582,16 @@ namespace IceBlinkCore
         {
             get { return itemOnUseSound; }
             set { itemOnUseSound = value; }
+        }
+
+        // * sinopip, 22.12.14
+        [XmlElement]
+        [Browsable(true), TypeConverter(typeof(SoundConverter))]
+        [CategoryAttribute("01 - Main"), DescriptionAttribute("Filename of sound to play when the item (weapon) hits a target (include extension)")]
+        public string ItemOnHitSound
+        {
+            get { return itemOnHitSound; }
+            set { itemOnHitSound = value; }
         }
 
         [XmlElement]

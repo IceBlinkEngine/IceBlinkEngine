@@ -4,23 +4,6 @@
         <name>IceBlinkCore</name>
     </assembly>
     <members>
-        <member name="F:IceBlinkCore.ScriptSelect.components">
-            <summary>
-            Required designer variable.
-            </summary>
-        </member>
-        <member name="M:IceBlinkCore.ScriptSelect.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:IceBlinkCore.ScriptSelect.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
         <member name="F:IceBlinkCore.EventObjectSelect.components">
             <summary>
             Required designer variable.
@@ -66,6 +49,23 @@
             <typeparam name="T">The type of object being copied.</typeparam>
             <param name="source">The object instance to copy.</param>
             <returns>The copied object.</returns>
+        </member>
+        <member name="F:IceBlinkCore.ScriptSelect.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:IceBlinkCore.ScriptSelect.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:IceBlinkCore.ScriptSelect.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
         </member>
     </members>
 </doc>

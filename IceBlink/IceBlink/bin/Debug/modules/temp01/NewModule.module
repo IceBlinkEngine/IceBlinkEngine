@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <modulePlayerClassList />
+  <moduleRacesList />
+  <moduleSkillsList />
+  <moduleSpellsList />
+  <moduleTraitsList />
+  <moduleEffectsList />
+  <moduleButtonEnterSound>btn_hover.wav</moduleButtonEnterSound>
+  <moduleButtonClickSound>btn_click.wav</moduleButtonClickSound>
+  <moduleButtonMediumNormalImage>b_med_normal.png</moduleButtonMediumNormalImage>
+  <moduleButtonMediumHoverImage>b_med_hover.png</moduleButtonMediumHoverImage>
+  <moduleButtonMediumPressedImage>b_med_pressed.png</moduleButtonMediumPressedImage>
+  <moduleButtonMediumDisabledImage>b_med_disabled.png</moduleButtonMediumDisabledImage>
+  <moduleButtonSmallNormalImage>b_sml_normal.png</moduleButtonSmallNormalImage>
+  <moduleButtonSmallHoverImage>b_sml_hover.png</moduleButtonSmallHoverImage>
+  <moduleButtonSmallPressedImage>b_sml_pressed.png</moduleButtonSmallPressedImage>
+  <moduleButtonSmallDisabledImage>b_sml_disabled.png</moduleButtonSmallDisabledImage>
+  <moduleButtonLargeNormalImage>b_lrg_normal.png</moduleButtonLargeNormalImage>
+  <moduleButtonLargeHoverImage>b_lrg_hover.png</moduleButtonLargeHoverImage>
+  <moduleButtonLargePressedImage>b_lrg_pressed.png</moduleButtonLargePressedImage>
+  <moduleButtonLargeDisabledImage>b_lrg_disabled.png</moduleButtonLargeDisabledImage>
+  <moduleButtonRArrowNormalImage>b_rarw_normal.png</moduleButtonRArrowNormalImage>
+  <moduleButtonRArrowHoverImage>b_rarw_hover.png</moduleButtonRArrowHoverImage>
+  <moduleButtonRArrowPressedImage>b_rarw_pressed.png</moduleButtonRArrowPressedImage>
+  <moduleButtonRArrowDisabledImage>b_rarw_disabled.png</moduleButtonRArrowDisabledImage>
+  <moduleButtonCloseNormalImage>b_close_normal.png</moduleButtonCloseNormalImage>
+  <moduleButtonCloseHoverImage>b_close_hover.png</moduleButtonCloseHoverImage>
+  <moduleButtonClosePressedImage>b_close_pressed.png</moduleButtonClosePressedImage>
+  <moduleButtonResizeNormalImage>b_rsize_normal.png</moduleButtonResizeNormalImage>
+  <moduleButtonResizeHoverImage>b_rsize_hover.png</moduleButtonResizeHoverImage>
+  <moduleButtonResizePressedImage>b_rsize_pressed.png</moduleButtonResizePressedImage>
+  <moduleGroupBoxLargeImage>gb_lrg_header.png</moduleGroupBoxLargeImage>
+  <moduleGroupBoxMediumImage>gb_med_header.png</moduleGroupBoxMediumImage>
+  <moduleGroupBoxSmallImage>gb_sml_header.png</moduleGroupBoxSmallImage>
+  <VersionIB>IceBlink v1.02</VersionIB>
+  <ModuleFolderName>temp01</ModuleFolderName>
+  <ModuleName>NewModule</ModuleName>
+  <ModuleDescription />
+  <ThemeFolderName>default</ThemeFolderName>
+  <UseRestSystem>true</UseRestSystem>
+  <UseAlignment>true</UseAlignment>
+  <WorldTime>0</WorldTime>
+  <NextIdNumber>1142</NextIdNumber>
+  <ModuleTheme>
+    <TitleText>NewModule</TitleText>
+    <TitleForeColor Web="ForestGreen" />
+    <TitleShadowColor Web="Black" />
+    <IBBorderOutsideColor Web="DarkGray" />
+    <IBBorderMiddleColor Web="Gray" />
+    <IBBorderInsideColor Web="DimGray" />
+    <GroupBoxBackGroundColor Web="LightSlateGray" />
+    <GroupBoxBorderColor Web="#004000" />
+    <HeaderForeColor Web="ForestGreen" />
+    <HeaderShadowColor Web="Black" />
+    <ModuleFontName>Comic Sans MS</ModuleFontName>
+    <ModuleFontPointSize>9</ModuleFontPointSize>
+    <ModuleFontScale>1</ModuleFontScale>
+    <StandardBackColor Web="DarkGreen" />
+    <StandardTextColor Web="Black" />
+    <ConvoBackColor Web="Black" />
+    <ConvoTextColor Web="ForestGreen" />
+  </ModuleTheme>
+  <ModuleEncountersList>
+    <encounters />
+  </ModuleEncountersList>
+  <ModuleContainersList>
+    <containers />
+  </ModuleContainersList>
+  <ModuleShopsList>
+    <shopsList />
+  </ModuleShopsList>
+  <ModuleCreaturesList>
+    <creatures />
+  </ModuleCreaturesList>
+  <ModulePropsList>
+    <propsList />
+  </ModulePropsList>
+  <ModuleJournal>
+    <categories />
+    <NextIdNum>542</NextIdNum>
+  </ModuleJournal>
+  <ModulePlayerClassList />
+  <ModuleRacesList />
+  <ModuleSkillsList />
+  <ModuleSpellsList />
+  <ModuleTraitsList />
+  <ModuleEffectsList />
+  <ModuleAreasList>
+    <ModuleAreasList>HomeDS</ModuleAreasList>
+  </ModuleAreasList>
+  <ModuleConvosList>
+    <ModuleConvosList>door01</ModuleConvosList>
+    <ModuleConvosList>trap01</ModuleConvosList>
+  </ModuleConvosList>
+  <ModuleAreasObjects />
+  <ModuleGlobalInts />
+  <ModuleGlobalStrings />
+  <ModuleGlobalObjects />
+  <ModuleGlobalListItems />
+  <ModuleLocalListItems />
+  <ModuleConvoSavedValuesList />
+  <StartingArea>HomeDS</StartingArea>
+  <StartingPlayerPosition>
+    <X>4</X>
+    <Y>1</Y>
+  </StartingPlayerPosition>
+  <CreaturesFileName>creatures.crt</CreaturesFileName>
+  <ItemsFileName>items.items</ItemsFileName>
+  <PropsFileName>props.prp</PropsFileName>
+  <ShopsFileName>shops.shp</ShopsFileName>
+  <ContainersFileName>containers.cntr</ContainersFileName>
+  <EncountersFileName>encounters.enctr</EncountersFileName>
+  <PlayerClassesFileName>playerClasses.cls</PlayerClassesFileName>
+  <JournalFileName>journal.jnl</JournalFileName>
+  <RacesFileName>races.rce</RacesFileName>
+  <SkillsFileName>skills.skl</SkillsFileName>
+  <SpellsFileName>spells.spls</SpellsFileName>
+  <TraitsFileName>traits.trts</TraitsFileName>
+  <EffectsFileName>effects.eft</EffectsFileName>
+  <LabelFunds>Gold</LabelFunds>
+  <LabelSpells>Spells</LabelSpells>
+  <ModuleFontName>Comic Sans MS</ModuleFontName>
+  <ModuleFontPointSize>9</ModuleFontPointSize>
+  <ModuleFontScale>1</ModuleFontScale>
+  <ModuleFloatyFontScale>2.5</ModuleFloatyFontScale>
+  <OnHeartBeat>
+    <FilenameOrTag>none</FilenameOrTag>
+    <Parm1>none</Parm1>
+    <Parm2>none</Parm2>
+    <Parm3>none</Parm3>
+    <Parm4>none</Parm4>
+  </OnHeartBeat>
+</Module>

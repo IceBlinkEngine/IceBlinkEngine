@@ -74,6 +74,19 @@ namespace IceBlink
         {
             int index = 0;
             int row = 0;
+            // * sinopip, 20.12.14
+            this.Width += 50;
+            Panel p = new Panel();
+			p.Size = this.gbSpellList.Size;
+			p.Location = new System.Drawing.Point(0, 30);
+            p.Width += 10;
+			p.Height -= 30;
+			this.gbSpellList.Width += 10;
+			this.gbSpellDesc.Width += 10;
+			this.gbSpellList.Left -= 10;
+			//this.gbSpellDesc.Left += 10;
+            p.BackColor = this.gbSpellList.BackColor;
+            //            
             foreach (Spell sp in pc.KnownSpellsList.spellList)
             {
                 if ((sp.UseableInSituation == UsableInSituation.Always) || (sp.UseableInSituation == UsableInSituation.OutOfCombat))
@@ -81,23 +94,35 @@ namespace IceBlink
                     IceBlinkButtonMedium btnNew = new IceBlink.IceBlinkButtonMedium();
                     if (index % 2 == 0) //even...place on left
                     {
-                        btnNew.Location = new System.Drawing.Point(10, row * 45 + 30);
+                    	btnNew.Location = new System.Drawing.Point(10, row * 45);// + 30);
                     }
                     else //odd...place on right
                     {
-                        btnNew.Location = new System.Drawing.Point(110, row * 45 + 30);
+                    	btnNew.Location = new System.Drawing.Point(110, row * 45);// + 30);
                         row++;
                     }
                     btnNew.Size = new System.Drawing.Size(93, 40);
                     btnNew.TextIB = sp.SpellName.ToUpper();
+	                // * sinopip, 20.12.14
+	                if (sp.SpellEffectType.ToString() == "Damage")
+	                	btnNew.Image = Image.FromFile("data\\ui\\rest.png");
+	                //
                     btnNew.Name = sp.SpellTag;
                     btnNew.Click += new System.EventHandler(this.btnSelectedSpell_Click);
                     btnNew.MouseEnter += new EventHandler(this.btnSelectedSpell_Enter);
                     btnNew.setupAll(game);
-                    this.gbSpellList.Controls.Add(btnNew);
+	                // * sinopip, 20.12.14
+	                //this.gbSpellList.Controls.Add(btnNew);
+	                p.Controls.Add(btnNew);
+	                //
                     index++;
                 }
             }
+            // * sinopip, 20.12.14
+            p.AutoScroll = true;
+            p.HorizontalScroll.Visible = false;
+            this.gbSpellList.Controls.Add(p);
+            //
         }
         private void btnSelectedSpell_Click(object sender, EventArgs e)
         {

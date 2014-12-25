@@ -17,3 +17,23 @@ C:\Users\Jeremy\Documents\Visual Studio 2010\Projects\IceBlinkScriptFunctions\Ic
 C:\Users\Jeremy\Documents\Visual Studio 2010\Projects\IceBlinkScriptFunctions\IceBlinkScriptFunctions\obj\Debug\IceBlinkScriptFunctions.csproj.ResolveComReference.cache
 C:\Users\Jeremy\Documents\Visual Studio 2010\Projects\IceBlinkScriptFunctions\IceBlinkScriptFunctions\obj\Debug\IceBlinkScriptFunctions.dll
 C:\Users\Jeremy\Documents\Visual Studio 2010\Projects\IceBlinkScriptFunctions\IceBlinkScriptFunctions\obj\Debug\IceBlinkScriptFunctions.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\obj\Debug\Interop.WMPLib.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\obj\Debug\IceBlinkScriptFunctions.csproj.ResolveComReference.cache
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\obj\Debug\IceBlinkScriptFunctions.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlinkScriptFunctions.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlinkScriptFunctions.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlink.exe
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlinkCore.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlinkToolset.exe
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\Interop.WMPLib.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\SharpDX.Direct3D9.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\SharpDX.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlink.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlinkCore.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlinkCore.xml
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\IceBlinkToolset.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\SharpDX.Direct3D9.xml
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\bin\Debug\SharpDX.xml
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkScriptFunctions\IceBlinkScriptFunctions\obj\Debug\IceBlinkScriptFunctions.pdb

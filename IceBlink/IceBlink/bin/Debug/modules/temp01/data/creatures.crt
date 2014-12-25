@@ -1,0 +1,2917 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Creatures xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Goblin</Name>
+      <NameWithNotes>Goblin</NameWithNotes>
+      <MouseOverText />
+      <Tag>goblin</Tag>
+      <ResRef>goblin00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>goblin.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>10</ACBase>
+      <AC>10</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>5</HP>
+      <HPMax>5</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Goblins</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>fireball.spt</ProjectileSpriteFilename>
+      <RewardXP>750</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>4</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Goblin Archer</Name>
+      <NameWithNotes>Goblin Archer</NameWithNotes>
+      <MouseOverText />
+      <Tag>goblin_archer</Tag>
+      <ResRef>goblin01</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>goblin.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>10</ACBase>
+      <AC>10</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>7</HP>
+      <HPMax>7</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Goblins</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>1000</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>7</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>4</DamageDie>
+      <WeaponType>Ranged</WeaponType>
+      <AttackSound>needler.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Skeleton Leader</Name>
+      <NameWithNotes>Skeleton Leader</NameWithNotes>
+      <MouseOverText />
+      <Tag>skele_leader</Tag>
+      <ResRef>skele01</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>skele_leader.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>12</ACBase>
+      <AC>10</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>10</HP>
+      <HPMax>10</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Skeletons</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>needlers.spt</ProjectileSpriteFilename>
+      <RewardXP>2000</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>7</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>6</DamageDie>
+      <WeaponType>Ranged</WeaponType>
+      <AttackSound>needler.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Skeleton</Name>
+      <NameWithNotes>Skeleton</NameWithNotes>
+      <MouseOverText />
+      <Tag>skele</Tag>
+      <ResRef>skele00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>skele.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>12</ACBase>
+      <AC>10</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>7</HP>
+      <HPMax>7</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Skeletons</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>fireball.spt</ProjectileSpriteFilename>
+      <RewardXP>1000</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>6</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Skeleton Giant</Name>
+      <NameWithNotes>Skeleton Giant</NameWithNotes>
+      <MouseOverText />
+      <Tag>skeleGiant</Tag>
+      <ResRef>skeleGiant00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>2</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>skeleGiant.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>2</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>14</Strength>
+      <Dexterity>14</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>14</BaseStr>
+      <BaseDex>14</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>12</ACBase>
+      <AC>14</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>5</HP>
+      <HPMax>5</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>7</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Skeletons</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>needlers.spt</ProjectileSpriteFilename>
+      <RewardXP>4000</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>2</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>8</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Kobold</Name>
+      <NameWithNotes>Kobold</NameWithNotes>
+      <MouseOverText />
+      <Tag>kobold</Tag>
+      <ResRef>kobold00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>kobold.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>10</ACBase>
+      <AC>10</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>3</HP>
+      <HPMax>3</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Kobolds</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>500</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>4</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Fire Beetle</Name>
+      <NameWithNotes>Fire Beetle</NameWithNotes>
+      <MouseOverText />
+      <Tag>FireBeetle</Tag>
+      <ResRef>FireBeetle00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>fireBeetle.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>12</ACBase>
+      <AC>12</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>5</HP>
+      <HPMax>5</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>3</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Vermin</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>400</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>1</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>4</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Kobold Leader</Name>
+      <NameWithNotes>Kobold Leader</NameWithNotes>
+      <MouseOverText />
+      <Tag>koboldLeader</Tag>
+      <ResRef>koboldLeader00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>2</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>koboldGiant.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>12</ACBase>
+      <AC>12</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>20</HP>
+      <HPMax>20</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Kobolds</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>2000</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>4</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Gray Spider</Name>
+      <NameWithNotes>Gray Spider</NameWithNotes>
+      <MouseOverText />
+      <Tag>grayspider</Tag>
+      <ResRef>grayspider00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>spider.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>10</ACBase>
+      <AC>10</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>3</HP>
+      <HPMax>3</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Vermin</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>400</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>1</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>4</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Gray Spider Queen</Name>
+      <NameWithNotes>Gray Spider Queen</NameWithNotes>
+      <MouseOverText />
+      <Tag>grayspiderqueen</Tag>
+      <ResRef>grayspiderqueen00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>3</ClassLevel>
+      <Gender>Female</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>2</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>spiderGiant.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>12</ACBase>
+      <AC>12</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>3</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>20</HP>
+      <HPMax>20</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>7</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>true</ConversationChk>
+      <ConversationTag>QueenSpider</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Vermin</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>2000</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>1</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>4</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Kobold Archer</Name>
+      <NameWithNotes>Kobold Archer</NameWithNotes>
+      <MouseOverText />
+      <Tag>koboldarcher</Tag>
+      <ResRef>koboldarcher00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>koboldArcher.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>10</ACBase>
+      <AC>10</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>3</HP>
+      <HPMax>3</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Kobolds</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>600</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>7</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>4</DamageDie>
+      <WeaponType>Ranged</WeaponType>
+      <AttackSound>needler.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Dire Rat</Name>
+      <NameWithNotes>Dire Rat</NameWithNotes>
+      <MouseOverText />
+      <Tag>direrat</Tag>
+      <ResRef>direrat00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>giantRat.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>8</ACBase>
+      <AC>8</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>3</HP>
+      <HPMax>3</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>4</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Animals</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>300</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>3</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Kobold Warrior</Name>
+      <NameWithNotes>Kobold Warrior</NameWithNotes>
+      <MouseOverText />
+      <Tag>koboldwarrior</Tag>
+      <ResRef>koboldwarrior00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>koboldWarrior.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>12</ACBase>
+      <AC>12</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>8</HP>
+      <HPMax>8</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Kobolds</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>600</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>6</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Kobold Elite Archer</Name>
+      <NameWithNotes>Kobold Elite Archer</NameWithNotes>
+      <MouseOverText />
+      <Tag>koboldelitearcher</Tag>
+      <ResRef>koboldelitearcher00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>koboldArcherElite.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>10</ACBase>
+      <AC>10</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>6</HP>
+      <HPMax>6</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Kobolds</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>1000</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>9</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>6</DamageDie>
+      <WeaponType>Ranged</WeaponType>
+      <AttackSound>needler.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Kobold Champion</Name>
+      <NameWithNotes>Kobold Champion</NameWithNotes>
+      <MouseOverText />
+      <Tag>koboldchampion</Tag>
+      <ResRef>koboldchampion00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>koboldChampion.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>14</ACBase>
+      <AC>14</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>15</HP>
+      <HPMax>15</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Kobolds</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>1200</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>1</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>6</DamageDie>
+      <WeaponType>Melee</WeaponType>
+      <AttackSound>punch.wav</AttackSound>
+    </Creatures>
+    <Creatures>
+      <CombatLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </CombatLocation>
+      <MapLocation>
+        <X>0</X>
+        <Y>0</Y>
+      </MapLocation>
+      <charInventoryList />
+      <Name>Orc Champion</Name>
+      <NameWithNotes>Orc Champion</NameWithNotes>
+      <MouseOverText />
+      <Tag>orcchampion</Tag>
+      <ResRef>orcchampion00</ResRef>
+      <ClassTag />
+      <RaceTag />
+      <DamageTypeResistanceTotalPoison>0</DamageTypeResistanceTotalPoison>
+      <DamageTypeResistanceTotalMagic>0</DamageTypeResistanceTotalMagic>
+      <DamageTypeResistanceTotalBludgeoning>0</DamageTypeResistanceTotalBludgeoning>
+      <DamageTypeResistanceTotalPiercing>0</DamageTypeResistanceTotalPiercing>
+      <DamageTypeResistanceTotalSlashing>0</DamageTypeResistanceTotalSlashing>
+      <DamageTypeResistanceTotalAcid>0</DamageTypeResistanceTotalAcid>
+      <DamageTypeResistanceTotalCold>0</DamageTypeResistanceTotalCold>
+      <DamageTypeResistanceTotalElectricity>0</DamageTypeResistanceTotalElectricity>
+      <DamageTypeResistanceTotalFire>0</DamageTypeResistanceTotalFire>
+      <DamageTypeResistanceTotalLight>0</DamageTypeResistanceTotalLight>
+      <DamageTypeResistanceTotalSonic>0</DamageTypeResistanceTotalSonic>
+      <AlignGoodEvil>Neutral</AlignGoodEvil>
+      <AlignLawChaos>Neutral</AlignLawChaos>
+      <EffectsList />
+      <ClassLevel>1</ClassLevel>
+      <Gender>Male</Gender>
+      <Status>Alive</Status>
+      <Facing>Left</Facing>
+      <CombatFacing>Left</CombatFacing>
+      <Size>1</Size>
+      <PortraitFileL>blank.png</PortraitFileL>
+      <SpriteFilename>GoblinArcher.spt</SpriteFilename>
+      <Fortitude>0</Fortitude>
+      <Will>0</Will>
+      <Reflex>0</Reflex>
+      <BaseFortitude>0</BaseFortitude>
+      <BaseWill>0</BaseWill>
+      <BaseReflex>0</BaseReflex>
+      <Strength>10</Strength>
+      <Dexterity>10</Dexterity>
+      <Constitution>10</Constitution>
+      <Intelligence>10</Intelligence>
+      <Wisdom>10</Wisdom>
+      <Charisma>10</Charisma>
+      <BaseStr>10</BaseStr>
+      <BaseDex>10</BaseDex>
+      <BaseCon>10</BaseCon>
+      <BaseInt>10</BaseInt>
+      <BaseWis>10</BaseWis>
+      <BaseCha>10</BaseCha>
+      <ACBase>14</ACBase>
+      <AC>14</AC>
+      <ClassBonus>0</ClassBonus>
+      <BaseAttBonus>1</BaseAttBonus>
+      <BaseAttBonusAdders>0</BaseAttBonusAdders>
+      <TotalDamageReduction>0</TotalDamageReduction>
+      <Funds>0</Funds>
+      <HP>16</HP>
+      <HPMax>16</HPMax>
+      <SP>0</SP>
+      <SPMax>0</SPMax>
+      <MoveDistance>5</MoveDistance>
+      <MoveDistanceBase>5</MoveDistanceBase>
+      <PerceptionRange>5</PerceptionRange>
+      <ConversationChk>false</ConversationChk>
+      <ConversationTag>none</ConversationTag>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Animated>false</Animated>
+      <HasCollision>true</HasCollision>
+      <HeadTag />
+      <NeckTag />
+      <BodyTag />
+      <MainHandTag />
+      <OffHandTag />
+      <Ring1Tag />
+      <Ring2Tag />
+      <FeetTag />
+      <OnHeartBeat>
+        <FilenameOrTag>crtOnHeartBeat.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHeartBeat>
+      <OnPerception>
+        <FilenameOrTag>crtOnPerception.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnPerception>
+      <OnStartCombatTurn>
+        <FilenameOrTag>crtOnStartCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnStartCombatTurn>
+      <OnAttack>
+        <FilenameOrTag>crtOnAttack.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnAttack>
+      <OnEndCombatTurn>
+        <FilenameOrTag>crtOnEndCombatTurn.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEndCombatTurn>
+      <OnHit>
+        <FilenameOrTag>crtOnHit.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnHit>
+      <OnDeath>
+        <FilenameOrTag>crtOnDeath.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnDeath>
+      <CharLocalInts />
+      <CharLocalStrings />
+      <CharAdditionalPropertyInts />
+      <CharAdditionalPropertyStrings />
+      <DamageTypeResistanceValuePoison>0</DamageTypeResistanceValuePoison>
+      <DamageTypeResistanceValueMagic>0</DamageTypeResistanceValueMagic>
+      <DamageTypeResistanceValueBludgeoning>0</DamageTypeResistanceValueBludgeoning>
+      <DamageTypeResistanceValuePiercing>0</DamageTypeResistanceValuePiercing>
+      <DamageTypeResistanceValueSlashing>0</DamageTypeResistanceValueSlashing>
+      <DamageTypeResistanceValueAcid>0</DamageTypeResistanceValueAcid>
+      <DamageTypeResistanceValueCold>0</DamageTypeResistanceValueCold>
+      <DamageTypeResistanceValueElectricity>0</DamageTypeResistanceValueElectricity>
+      <DamageTypeResistanceValueFire>0</DamageTypeResistanceValueFire>
+      <DamageTypeResistanceValueLight>0</DamageTypeResistanceValueLight>
+      <DamageTypeResistanceValueSonic>0</DamageTypeResistanceValueSonic>
+      <TypeOfDamage>Slashing</TypeOfDamage>
+      <CreatureBaseAttBonus>1</CreatureBaseAttBonus>
+      <CreatureBaseAttBonusAdders>0</CreatureBaseAttBonusAdders>
+      <CreatureNumberOfAttacks>1</CreatureNumberOfAttacks>
+      <CreatureMoveDistance>5</CreatureMoveDistance>
+      <OnScoringHit>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnScoringHit>
+      <DamageAdder>0</DamageAdder>
+      <InitiativeModifier>0</InitiativeModifier>
+      <PerceptionValue>0</PerceptionValue>
+      <CriticalHitRange>20</CriticalHitRange>
+      <CriticalHitDamageMultiplier>2</CriticalHitDamageMultiplier>
+      <CreatureAI>BasicAttacker</CreatureAI>
+      <CategoryName>Orcs</CategoryName>
+      <Description />
+      <ProjectileSpriteFilename>arrow.spt</ProjectileSpriteFilename>
+      <RewardXP>1800</RewardXP>
+      <CreatureFortitude>0</CreatureFortitude>
+      <CreatureWill>0</CreatureWill>
+      <CreatureReflex>0</CreatureReflex>
+      <DamageReduction>0</DamageReduction>
+      <Attack>0</Attack>
+      <AttackRange>9</AttackRange>
+      <NumberOfDamageDice>1</NumberOfDamageDice>
+      <DamageDie>6</DamageDie>
+      <WeaponType>Ranged</WeaponType>
+      <AttackSound>needler.wav</AttackSound>
+    </Creatures>
+  </creatures>
+</Creatures>

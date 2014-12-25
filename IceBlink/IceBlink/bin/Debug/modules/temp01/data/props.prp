@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Props xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <propsList>
+    <PropsList>
+      <PropName>small chest</PropName>
+      <PropNameWithNotes>small chest</PropNameWithNotes>
+      <MouseOverText />
+      <PropTag>smallChest1</PropTag>
+      <PropResRef>smallchest00</PropResRef>
+      <PropCategoryName>Chests</PropCategoryName>
+      <PropSpriteFilename>treasure2.spt</PropSpriteFilename>
+      <Animated>false</Animated>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Looping>false</Looping>
+      <HasCollision>false</HasCollision>
+      <PropContainerChk>false</PropContainerChk>
+      <PropContainerTag />
+      <PropTrapped>false</PropTrapped>
+      <PropLocked>false</PropLocked>
+      <PropKeyTag />
+      <PropConversationChk>false</PropConversationChk>
+      <PropConversationTag />
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <FPS>30</FPS>
+      <IdleFPS>15</IdleFPS>
+      <AttackingFPS>15</AttackingFPS>
+      <WalkingFPS>15</WalkingFPS>
+      <IdleDelay>2000</IdleDelay>
+      <OnOpen>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnOpen>
+      <OnClose>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnClose>
+      <OnCollision>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnCollision>
+      <OnEnter>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEnter>
+      <PropLocalInts />
+      <PropLocalStrings />
+    </PropsList>
+    <PropsList>
+      <PropName>doorHorizontal</PropName>
+      <PropNameWithNotes>doorHorizontal</PropNameWithNotes>
+      <MouseOverText />
+      <PropTag>door01</PropTag>
+      <PropResRef>door01</PropResRef>
+      <PropCategoryName>Doors</PropCategoryName>
+      <PropSpriteFilename>doorHorz.spt</PropSpriteFilename>
+      <Animated>false</Animated>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Looping>false</Looping>
+      <HasCollision>false</HasCollision>
+      <PropContainerChk>false</PropContainerChk>
+      <PropContainerTag />
+      <PropTrapped>false</PropTrapped>
+      <PropLocked>false</PropLocked>
+      <PropKeyTag />
+      <PropConversationChk>false</PropConversationChk>
+      <PropConversationTag>none</PropConversationTag>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <FPS>30</FPS>
+      <IdleFPS>15</IdleFPS>
+      <AttackingFPS>15</AttackingFPS>
+      <WalkingFPS>15</WalkingFPS>
+      <IdleDelay>2000</IdleDelay>
+      <OnOpen>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnOpen>
+      <OnClose>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnClose>
+      <OnCollision>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnCollision>
+      <OnEnter>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEnter>
+      <PropLocalInts />
+      <PropLocalStrings />
+    </PropsList>
+    <PropsList>
+      <PropName>Minor Spike Trap</PropName>
+      <PropNameWithNotes>Minor Spike Trap</PropNameWithNotes>
+      <MouseOverText />
+      <PropTag>trapMinorSpike01</PropTag>
+      <PropResRef>trapMinorSpike01</PropResRef>
+      <PropCategoryName>Traps</PropCategoryName>
+      <PropSpriteFilename>trap.spt</PropSpriteFilename>
+      <Animated>false</Animated>
+      <Show>false</Show>
+      <Visible>false</Visible>
+      <Looping>false</Looping>
+      <HasCollision>false</HasCollision>
+      <PropContainerChk>false</PropContainerChk>
+      <PropContainerTag />
+      <PropTrapped>false</PropTrapped>
+      <PropLocked>false</PropLocked>
+      <PropKeyTag />
+      <PropConversationChk>true</PropConversationChk>
+      <PropConversationTag>trap01</PropConversationTag>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <FPS>30</FPS>
+      <IdleFPS>15</IdleFPS>
+      <AttackingFPS>15</AttackingFPS>
+      <WalkingFPS>15</WalkingFPS>
+      <IdleDelay>2000</IdleDelay>
+      <OnOpen>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnOpen>
+      <OnClose>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnClose>
+      <OnCollision>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnCollision>
+      <OnEnter>
+        <FilenameOrTag>trapMinorSpike.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEnter>
+      <PropLocalInts />
+      <PropLocalStrings />
+    </PropsList>
+    <PropsList>
+      <PropName>doorVertical</PropName>
+      <PropNameWithNotes>doorVertical</PropNameWithNotes>
+      <MouseOverText />
+      <PropTag>door02</PropTag>
+      <PropResRef>door02</PropResRef>
+      <PropCategoryName>Doors</PropCategoryName>
+      <PropSpriteFilename>doorVert.spt</PropSpriteFilename>
+      <Animated>false</Animated>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Looping>false</Looping>
+      <HasCollision>false</HasCollision>
+      <PropContainerChk>false</PropContainerChk>
+      <PropContainerTag />
+      <PropTrapped>false</PropTrapped>
+      <PropLocked>false</PropLocked>
+      <PropKeyTag />
+      <PropConversationChk>false</PropConversationChk>
+      <PropConversationTag>none</PropConversationTag>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <FPS>30</FPS>
+      <IdleFPS>15</IdleFPS>
+      <AttackingFPS>15</AttackingFPS>
+      <WalkingFPS>15</WalkingFPS>
+      <IdleDelay>2000</IdleDelay>
+      <OnOpen>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnOpen>
+      <OnClose>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnClose>
+      <OnCollision>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnCollision>
+      <OnEnter>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEnter>
+      <PropLocalInts />
+      <PropLocalStrings />
+    </PropsList>
+    <PropsList>
+      <PropName>shield on ground</PropName>
+      <PropNameWithNotes>shield on ground</PropNameWithNotes>
+      <MouseOverText />
+      <PropTag>groundshield</PropTag>
+      <PropResRef>groundshield00</PropResRef>
+      <PropCategoryName>Chests</PropCategoryName>
+      <PropSpriteFilename>shieldGround.spt</PropSpriteFilename>
+      <Animated>false</Animated>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Looping>false</Looping>
+      <HasCollision>false</HasCollision>
+      <PropContainerChk>false</PropContainerChk>
+      <PropContainerTag />
+      <PropTrapped>false</PropTrapped>
+      <PropLocked>false</PropLocked>
+      <PropKeyTag />
+      <PropConversationChk>false</PropConversationChk>
+      <PropConversationTag />
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <FPS>30</FPS>
+      <IdleFPS>15</IdleFPS>
+      <AttackingFPS>15</AttackingFPS>
+      <WalkingFPS>15</WalkingFPS>
+      <IdleDelay>2000</IdleDelay>
+      <OnOpen>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnOpen>
+      <OnClose>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnClose>
+      <OnCollision>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnCollision>
+      <OnEnter>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEnter>
+      <PropLocalInts />
+      <PropLocalStrings />
+    </PropsList>
+    <PropsList>
+      <PropName>doorHorizontal Locked</PropName>
+      <PropNameWithNotes>doorHorizontal Locked</PropNameWithNotes>
+      <MouseOverText />
+      <PropTag>door3</PropTag>
+      <PropResRef>door3</PropResRef>
+      <PropCategoryName>Doors</PropCategoryName>
+      <PropSpriteFilename>doorHorz.spt</PropSpriteFilename>
+      <Animated>false</Animated>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Looping>false</Looping>
+      <HasCollision>false</HasCollision>
+      <PropContainerChk>false</PropContainerChk>
+      <PropContainerTag />
+      <PropTrapped>false</PropTrapped>
+      <PropLocked>true</PropLocked>
+      <PropKeyTag />
+      <PropConversationChk>false</PropConversationChk>
+      <PropConversationTag>door01</PropConversationTag>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <FPS>30</FPS>
+      <IdleFPS>15</IdleFPS>
+      <AttackingFPS>15</AttackingFPS>
+      <WalkingFPS>15</WalkingFPS>
+      <IdleDelay>2000</IdleDelay>
+      <OnOpen>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnOpen>
+      <OnClose>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnClose>
+      <OnCollision>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnCollision>
+      <OnEnter>
+        <FilenameOrTag>doorOnEnter.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEnter>
+      <PropLocalInts />
+      <PropLocalStrings />
+    </PropsList>
+    <PropsList>
+      <PropName>doorVertical Locked</PropName>
+      <PropNameWithNotes>doorVertical Locked</PropNameWithNotes>
+      <MouseOverText />
+      <PropTag>door4</PropTag>
+      <PropResRef>door4</PropResRef>
+      <PropCategoryName>Doors</PropCategoryName>
+      <PropSpriteFilename>doorVert.spt</PropSpriteFilename>
+      <Animated>false</Animated>
+      <Show>true</Show>
+      <Visible>false</Visible>
+      <Looping>false</Looping>
+      <HasCollision>false</HasCollision>
+      <PropContainerChk>false</PropContainerChk>
+      <PropContainerTag />
+      <PropTrapped>false</PropTrapped>
+      <PropLocked>true</PropLocked>
+      <PropKeyTag />
+      <PropConversationChk>false</PropConversationChk>
+      <PropConversationTag>door01</PropConversationTag>
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <FPS>30</FPS>
+      <IdleFPS>15</IdleFPS>
+      <AttackingFPS>15</AttackingFPS>
+      <WalkingFPS>15</WalkingFPS>
+      <IdleDelay>2000</IdleDelay>
+      <OnOpen>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnOpen>
+      <OnClose>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnClose>
+      <OnCollision>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnCollision>
+      <OnEnter>
+        <FilenameOrTag>doorOnEnter.cs</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEnter>
+      <PropLocalInts />
+      <PropLocalStrings />
+    </PropsList>
+    <PropsList>
+      <PropName>Camp Fire Off</PropName>
+      <PropNameWithNotes>Camp Fire Off</PropNameWithNotes>
+      <MouseOverText />
+      <PropTag>campFireOff</PropTag>
+      <PropResRef>campFireOff00</PropResRef>
+      <PropCategoryName>Nature</PropCategoryName>
+      <PropSpriteFilename>campFireOff.spt</PropSpriteFilename>
+      <Animated>false</Animated>
+      <Show>false</Show>
+      <Visible>false</Visible>
+      <Looping>false</Looping>
+      <HasCollision>false</HasCollision>
+      <PropContainerChk>false</PropContainerChk>
+      <PropContainerTag />
+      <PropTrapped>false</PropTrapped>
+      <PropLocked>false</PropLocked>
+      <PropKeyTag />
+      <PropConversationChk>false</PropConversationChk>
+      <PropConversationTag />
+      <Location>
+        <X>0</X>
+        <Y>0</Y>
+      </Location>
+      <FPS>30</FPS>
+      <IdleFPS>15</IdleFPS>
+      <AttackingFPS>15</AttackingFPS>
+      <WalkingFPS>15</WalkingFPS>
+      <IdleDelay>2000</IdleDelay>
+      <OnOpen>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnOpen>
+      <OnClose>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnClose>
+      <OnCollision>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnCollision>
+      <OnEnter>
+        <FilenameOrTag>none</FilenameOrTag>
+        <Parm1>none</Parm1>
+        <Parm2>none</Parm2>
+        <Parm3>none</Parm3>
+        <Parm4>none</Parm4>
+      </OnEnter>
+      <PropLocalInts />
+      <PropLocalStrings />
+    </PropsList>
+  </propsList>
+</Props>

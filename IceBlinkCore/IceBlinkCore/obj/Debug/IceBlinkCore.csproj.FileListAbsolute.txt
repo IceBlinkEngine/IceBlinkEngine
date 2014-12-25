@@ -19,3 +19,23 @@ C:\Users\Jeremy\Documents\Visual Studio 2010\Projects\IceBlinkCore\IceBlinkCore\
 C:\Users\Jeremy\Documents\Visual Studio 2010\Projects\IceBlinkCore\IceBlinkCore\obj\Debug\IceBlinkCore.csprojResolveAssemblyReference.cache
 C:\Users\Jeremy\Documents\Visual Studio 2010\Projects\IceBlinkCore\IceBlinkCore\obj\Debug\IceBlinkCore.csproj.GenerateResource.Cache
 C:\Users\Jeremy\Documents\Visual Studio 2010\Projects\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlinkCore.xml
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlinkCore.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlinkCore.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlinkCore.xml
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlink.exe
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlinkScriptFunctions.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlinkToolset.exe
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\Interop.WMPLib.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlink.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlinkScriptFunctions.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\IceBlinkToolset.pdb
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\SharpDX.xml
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\bin\Debug\SharpDX.Direct3D9.xml
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\obj\Debug\IceBlinkCore.EventObjectSelect.resources
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\obj\Debug\IceBlinkCore.ScriptSelect.resources
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\obj\Debug\IceBlinkCore.dll
+C:\Program Files\SharpDevelop\4.4\Projects\IceBlinkEngine\IceBlinkCore\IceBlinkCore\obj\Debug\IceBlinkCore.pdb

@@ -68,7 +68,13 @@ namespace IceBlinkToolset
         //public bool paintTriggerSelected = false;
         //public bool editTriggerSelected = false;
         //public bool toggleWalkable = false;
-
+        // * sinopip, 22.12.14        
+		public bool is_upscrolling = false;
+		public bool is_downscrolling = false;
+		public bool is_leftscrolling = false;
+		public bool is_rightscrolling = false;
+		//
+		
         public LevelEditor(Module mod, Game g, ParentForm p)
         {
             InitializeComponent();
@@ -1117,9 +1123,30 @@ namespace IceBlinkToolset
                 //save changes
                 pictureBox1.Image = drawArea;
             }
+            // * sinopip, 22.12.14
+            // * enable scroll area when mouse is on borders (scrollbar position values are negative)
+            is_leftscrolling = false;
+        	is_rightscrolling = false;
+        	is_upscrolling = false;
+        	is_downscrolling = false;
+        	if (mousex < 100 + -panel3.AutoScrollPosition.X) 
+        		is_leftscrolling = true;
+        	if (mousey < 100 + -panel3.AutoScrollPosition.Y) 
+        		is_upscrolling = true;
+        	if (mousex > (panel3.Width-100) + -panel3.AutoScrollPosition.X)
+        		is_rightscrolling = true;
+        	if (mousey > (panel3.Height-100) + -panel3.AutoScrollPosition.Y)
+        		is_downscrolling = true;
+			//                          
         }
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
+        	// * sinopip, 22.12.14
+            is_leftscrolling = false;
+        	is_rightscrolling = false;
+        	is_upscrolling = false;
+        	is_downscrolling = false;   
+			//        	
             try
             {
                 refreshMap();
@@ -1448,6 +1475,26 @@ namespace IceBlinkToolset
                 pictureBox1.Image = drawArea;
                 rbtnInfo.Checked = true;
             }
-        }        
+        }
+
+        // * sinopip, 22.12.14
+		// * scroll the map (timer component of 25ms tick)
+        void ScrollTimerTick(object sender, EventArgs e)
+        {
+        	if (is_leftscrolling)
+        		panel3.AutoScrollPosition = new Point(
+        			-panel3.AutoScrollPosition.X - 16,
+        			-panel3.AutoScrollPosition.Y);
+        	if (is_rightscrolling) panel3.AutoScrollPosition = new Point(
+        			-panel3.AutoScrollPosition.X + 16,
+        			-panel3.AutoScrollPosition.Y);
+        	if (is_upscrolling) panel3.AutoScrollPosition = new Point(
+        			-panel3.AutoScrollPosition.X,
+        			-panel3.AutoScrollPosition.Y - 16);
+        	if (is_downscrolling) panel3.AutoScrollPosition = new Point(
+        			-panel3.AutoScrollPosition.X,
+        			-panel3.AutoScrollPosition.Y + 16);    	
+        }
+		//  
     }
 }

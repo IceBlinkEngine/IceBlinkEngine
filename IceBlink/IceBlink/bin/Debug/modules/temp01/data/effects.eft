@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Effects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <effectsList>
+    <UsedForUpdateStats>false</UsedForUpdateStats>
+    <IsStackableEffect>false</IsStackableEffect>
+    <IsStackableDuration>false</IsStackableDuration>
+    <EffectName>MinorRegeneration</EffectName>
+    <EffectLetter>R</EffectLetter>
+    <EffectLetterColor Web="Yellow" />
+    <EffectTag>regenMinor</EffectTag>
+    <TagOfSender>senderTag</TagOfSender>
+    <Description>Minor regeneration healing effect</Description>
+    <SpriteFilename>held.spt</SpriteFilename>
+    <EffectCategory>Buff</EffectCategory>
+    <DurationInRounds>3</DurationInRounds>
+    <CurrentDurationInRounds>0</CurrentDurationInRounds>
+    <DurationInUnits>18</DurationInUnits>
+    <CurrentDurationInUnits>0</CurrentDurationInUnits>
+    <StartingTimeInUnits>0</StartingTimeInUnits>
+    <BABModifier>0</BABModifier>
+    <ACModifier>0</ACModifier>
+    <DamageMeleeModifier>0</DamageMeleeModifier>
+    <DamageRangedModifier>0</DamageRangedModifier>
+    <DamageReductionModifier>0</DamageReductionModifier>
+    <EffectScript>
+      <FilenameOrTag>efHitPointBoost.cs</FilenameOrTag>
+      <Parm1>none</Parm1>
+      <Parm2>none</Parm2>
+      <Parm3>none</Parm3>
+      <Parm4>none</Parm4>
+    </EffectScript>
+  </effectsList>
+  <effectsList>
+    <UsedForUpdateStats>false</UsedForUpdateStats>
+    <IsStackableEffect>false</IsStackableEffect>
+    <IsStackableDuration>false</IsStackableDuration>
+    <EffectName>Hold</EffectName>
+    <EffectLetter>H</EffectLetter>
+    <EffectLetterColor Web="Magenta" />
+    <EffectTag>hold</EffectTag>
+    <TagOfSender>senderTag</TagOfSender>
+    <Description>Hold effect</Description>
+    <SpriteFilename>held.spt</SpriteFilename>
+    <EffectCategory>Hold</EffectCategory>
+    <DurationInRounds>3</DurationInRounds>
+    <CurrentDurationInRounds>0</CurrentDurationInRounds>
+    <DurationInUnits>18</DurationInUnits>
+    <CurrentDurationInUnits>0</CurrentDurationInUnits>
+    <StartingTimeInUnits>0</StartingTimeInUnits>
+    <BABModifier>0</BABModifier>
+    <ACModifier>0</ACModifier>
+    <DamageMeleeModifier>0</DamageMeleeModifier>
+    <DamageRangedModifier>0</DamageRangedModifier>
+    <DamageReductionModifier>0</DamageReductionModifier>
+    <EffectScript>
+      <FilenameOrTag>efHeld.cs</FilenameOrTag>
+      <Parm1>none</Parm1>
+      <Parm2>none</Parm2>
+      <Parm3>none</Parm3>
+      <Parm4>none</Parm4>
+    </EffectScript>
+  </effectsList>
+  <effectsList>
+    <UsedForUpdateStats>false</UsedForUpdateStats>
+    <IsStackableEffect>false</IsStackableEffect>
+    <IsStackableDuration>false</IsStackableDuration>
+    <EffectName>Web</EffectName>
+    <EffectLetter>W</EffectLetter>
+    <EffectLetterColor Web="White" />
+    <EffectTag>web</EffectTag>
+    <TagOfSender>senderTag</TagOfSender>
+    <Description>Web Effect</Description>
+    <SpriteFilename>held.spt</SpriteFilename>
+    <EffectCategory>Hold</EffectCategory>
+    <DurationInRounds>3</DurationInRounds>
+    <CurrentDurationInRounds>0</CurrentDurationInRounds>
+    <DurationInUnits>18</DurationInUnits>
+    <CurrentDurationInUnits>0</CurrentDurationInUnits>
+    <StartingTimeInUnits>0</StartingTimeInUnits>
+    <BABModifier>0</BABModifier>
+    <ACModifier>0</ACModifier>
+    <DamageMeleeModifier>0</DamageMeleeModifier>
+    <DamageRangedModifier>0</DamageRangedModifier>
+    <DamageReductionModifier>0</DamageReductionModifier>
+    <EffectScript>
+      <FilenameOrTag>efHeld.cs</FilenameOrTag>
+      <Parm1>none</Parm1>
+      <Parm2>none</Parm2>
+      <Parm3>none</Parm3>
+      <Parm4>none</Parm4>
+    </EffectScript>
+  </effectsList>
+  <effectsList>
+    <UsedForUpdateStats>false</UsedForUpdateStats>
+    <IsStackableEffect>false</IsStackableEffect>
+    <IsStackableDuration>false</IsStackableDuration>
+    <EffectName>Sleep</EffectName>
+    <EffectLetter>S</EffectLetter>
+    <EffectLetterColor Web="Aqua" />
+    <EffectTag>sleep</EffectTag>
+    <TagOfSender>senderTag</TagOfSender>
+    <Description>Sleep Effect</Description>
+    <SpriteFilename>held.spt</SpriteFilename>
+    <EffectCategory>Hold</EffectCategory>
+    <DurationInRounds>2</DurationInRounds>
+    <CurrentDurationInRounds>0</CurrentDurationInRounds>
+    <DurationInUnits>12</DurationInUnits>
+    <CurrentDurationInUnits>0</CurrentDurationInUnits>
+    <StartingTimeInUnits>0</StartingTimeInUnits>
+    <BABModifier>0</BABModifier>
+    <ACModifier>0</ACModifier>
+    <DamageMeleeModifier>0</DamageMeleeModifier>
+    <DamageRangedModifier>0</DamageRangedModifier>
+    <DamageReductionModifier>0</DamageReductionModifier>
+    <EffectScript>
+      <FilenameOrTag>efSleep.cs</FilenameOrTag>
+      <Parm1>none</Parm1>
+      <Parm2>none</Parm2>
+      <Parm3>none</Parm3>
+      <Parm4>none</Parm4>
+    </EffectScript>
+  </effectsList>
+</Effects>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sprite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ImageLayout>
+    <X>4</X>
+    <Y>4</Y>
+  </ImageLayout>
+  <SpriteSize>
+    <Width>64</Width>
+    <Height>64</Height>
+  </SpriteSize>
+  <Filename>heroA.spt</Filename>
+  <SpriteSheetFilename>hero.png</SpriteSheetFilename>
+  <Actor>true</Actor>
+  <Tag>heroA</Tag>
+  <TopDown>false</TopDown>
+  <Animated>false</Animated>
+  <Show>true</Show>
+  <Visible>false</Visible>
+  <Looping>false</Looping>
+  <Location>
+    <X>0</X>
+    <Y>0</Y>
+  </Location>
+  <Frame>0</Frame>
+  <FrameRange>
+    <X>0</X>
+    <Y>59</Y>
+  </FrameRange>
+  <FPS>5</FPS>
+  <NumberOfFrames>16</NumberOfFrames>
+  <IdleNumberOfFrames>1</IdleNumberOfFrames>
+  <AttackingNumberOfFrames>4</AttackingNumberOfFrames>
+  <WalkingNumberOfFrames>4</WalkingNumberOfFrames>
+  <IdleFPS>1</IdleFPS>
+  <AttackingFPS>16</AttackingFPS>
+  <WalkingFPS>20</WalkingFPS>
+  <IdleDelay>2000</IdleDelay>
+</Sprite>

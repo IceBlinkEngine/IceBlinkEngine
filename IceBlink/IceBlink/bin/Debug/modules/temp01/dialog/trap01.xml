@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Convo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <subNodes>
+    <ContentNode idNum="0" orderNum="0" pcNode="true" linkTo="0">
+      <NodePortraitBitmap />
+      <NodeSound>none</NodeSound>
+      <conversationText>root</conversationText>
+      <subNodes>
+        <ContentNode idNum="1" orderNum="0" pcNode="false" linkTo="0">
+          <NodePortraitBitmap />
+          <NodeSound>none</NodeSound>
+          <conversationText>You have discovered a trap</conversationText>
+          <subNodes>
+            <ContentNode idNum="2" orderNum="0" pcNode="true" linkTo="0">
+              <NodePortraitBitmap />
+              <NodeSound>none</NodeSound>
+              <conversationText>Disarm the trap</conversationText>
+              <subNodes />
+              <actions />
+              <conditions />
+            </ContentNode>
+            <ContentNode idNum="3" orderNum="1" pcNode="true" linkTo="0">
+              <NodePortraitBitmap />
+              <NodeSound>none</NodeSound>
+              <conversationText>Leave the trap alone</conversationText>
+              <subNodes />
+              <actions>
+                <Action a_script="gaMovePartyToLastLocation.cs" />
+              </actions>
+              <conditions />
+            </ContentNode>
+          </subNodes>
+          <actions />
+          <conditions />
+        </ContentNode>
+      </subNodes>
+      <actions />
+      <conditions />
+    </ContentNode>
+  </subNodes>
+  <ConvoFileName>trap01.xml</ConvoFileName>
+  <Narration>false</Narration>
+  <NpcPortraitBitmap />
+  <NextIdNum>3</NextIdNum>
+</Convo>

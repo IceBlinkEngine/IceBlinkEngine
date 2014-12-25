@@ -18,6 +18,12 @@ namespace IceBlink
         {
             // C# code goes here
             PC pc = (PC)sf.CombatSource;
+			// * sinopip, 22.12.14
+			Item weapon;
+			if (p2 != null && p2 == "offhand")
+			  weapon = pc.OffHand;
+			else weapon = pc.MainHand;
+			//
             Creature crt = (Creature)sf.CombatTarget; //this is the creature that is being attacked
             Combat c = sf.frm.currentCombat;
 
@@ -28,7 +34,7 @@ namespace IceBlink
             foreach (Creature crtr in sf.gm.currentEncounter.EncounterCreatureList.creatures)
             {
                 //check whether pc is attacking with non-melee weapon /non-barehanded and if there's any creature on neighbouring field
-                if ((pc.MainHand.ItemCategory != Item.category.Melee) && (pc.MainHand.ItemName != "") && (sf.CalcDistance(crtr.CombatLocation, pc.CombatLocation) <= 1))
+                if ((weapon.ItemCategory != Item.category.Melee) && (weapon.ItemName != "") && (sf.CalcDistance(crtr.CombatLocation, pc.CombatLocation) <= 1))
                 {
                     if (!HasPointBlankShotTrait(pc)) //If you have the Point Blank Shot feat, avoids free attack
                     {
@@ -46,9 +52,9 @@ namespace IceBlink
             //Right now a backstab attack denies multiple attacks -  a bit unfair for high level thieves, or not? Pending discusssion.
             //Might be compensated by very high damage multipliers though, which would look impressive :-): One single, but deadly strike, I like :-)
             //Current doBackStabPcAttack has higher multipliers than usual OGL, but also costs a combat round on enter stealth
-            if ((HasBackStabTrait(pc)) && (IsAttackFromBehind(pc, crt)) && (sf.CalcDistance(crt.CombatLocation, pc.CombatLocation) <= 1) && (sf.CheckLocalInt(pc.Tag, "StealthModeOn", "=", 1)) && (pc.MainHand.ItemCategory == Item.category.Melee))
+            if ((HasBackStabTrait(pc)) && (IsAttackFromBehind(pc, crt)) && (sf.CalcDistance(crt.CombatLocation, pc.CombatLocation) <= 1) && (sf.CheckLocalInt(pc.Tag, "StealthModeOn", "=", 1)) && (weapon.ItemCategory == Item.category.Melee))
             {
-                doBackStabPcAttack(sf, c, pc, crt);
+                doBackStabPcAttack(sf, c, pc, pc.MainHand, crt);
             }
 
             //if ((HasBackStabTrait(pc)) && (IsAttackFromBehind(pc,crt)))
@@ -67,14 +73,14 @@ namespace IceBlink
                     if (HasCleaveTrait(pc))
                     {
                         bool killed = false;
-                        killed = doStandardPcAttack(sf, c, pc, crt);
+                        killed = doStandardPcAttack(sf, c, pc, weapon, crt);
                         if (killed)
                         {
                             crt = sf.GetNextAdjacentCreature(pc);
                             if (crt != null)
                             {
                                 sf.DrawCombatFloatyTextOverSquare("cleave", crt.CombatLocation.X, crt.CombatLocation.Y, 25, Color.White, Color.Black);
-                                doStandardPcAttack(sf, c, pc, crt);
+                                doStandardPcAttack(sf, c, pc, weapon, crt);
                             }
                             return; //do not try and attack same creature that was just killed
                         }                        
@@ -82,7 +88,7 @@ namespace IceBlink
                     else
                     {
                         bool killed = false;
-                        killed = doStandardPcAttack(sf, c, pc, crt);
+                        killed = doStandardPcAttack(sf, c, pc, weapon, crt);
                         if (killed)
                         {
                             return; //do not try and attack same creature that was just killed
@@ -135,7 +141,7 @@ namespace IceBlink
             if ((pc.CombatLocation.X < crt.CombatLocation.X)  && (pc.CombatLocation.Y < crt.CombatLocation.Y) && (crt.CombatFacing == CharBase.facing.DownRight)) { return true; }
             return false;
         }
-        public bool doStandardPcAttack(ScriptFunctions sf, Combat c, PC pc, Creature crt)
+        public bool doStandardPcAttack(ScriptFunctions sf, Combat c, PC pc, Item weapon, Creature crt)
         {
             pc.UpdateStats(sf);
             int attackRoll = sf.gm.Random(20);
@@ -154,9 +160,9 @@ namespace IceBlink
             //variable storing whether a critical hit was rolled
             int criticalHitScored = 0;
             // variable for storing the critical hit range
-            int criticalHitRange = pc.MainHand.CriticalHitRange;
+            int criticalHitRange = weapon.CriticalHitRange;
             //variable for storing the critical hit multiplier
-            int criticalHitDamageMultiplier = pc.MainHand.CriticalHitDamageMultiplier;
+            int criticalHitDamageMultiplier = weapon.CriticalHitDamageMultiplier;
             //critical hit mechanism - triggered on a roll equal or higher than criticalHitRange  
             if ((attackRoll >= criticalHitRange) || (attackRoll == 20))
             {
@@ -185,6 +191,10 @@ namespace IceBlink
             {
                 //sf.drawHitSymbolOnCreature();
 
+                // * sinopip, 22.12.14
+                	c.playItemHitSound(weapon);
+                //
+                
                 string attackResult = (damage.ToString() + " of " + crt.HP.ToString());
 
                 //differ between attacks from behinds, critical and regular hits in various combinations
@@ -237,7 +247,7 @@ namespace IceBlink
                 c.logText(Environment.NewLine, Color.Black);
 
                 #region onScoringHit script of used item
-                IceBlinkCore.ScriptSelectEditorReturnObject scriptItem = pc.MainHand.OnScoringHit;
+                IceBlinkCore.ScriptSelectEditorReturnObject scriptItem = weapon.OnScoringHit;
                 sf.frm.doScriptBasedOnFilename(scriptItem.FilenameOrTag, scriptItem.Parm1, scriptItem.Parm2, scriptItem.Parm3, scriptItem.Parm4);
                 #endregion
 
@@ -269,7 +279,7 @@ namespace IceBlink
                 return false;
             }
         }        
-        public void doBackStabPcAttack(ScriptFunctions sf, Combat c, PC pc, Creature crt)
+        public void doBackStabPcAttack(ScriptFunctions sf, Combat c, PC pc, Item weapon, Creature crt)
         {
             pc.UpdateStats(sf);
             int attackRoll = sf.gm.Random(20);
@@ -289,9 +299,9 @@ namespace IceBlink
             int criticalHitScored = 0;
             //critical hit (see detail comments above for normal attacks)
             // variable for storing the critical hit range
-            int criticalHitRange = pc.MainHand.CriticalHitRange;
+            int criticalHitRange = weapon.CriticalHitRange;
             //variable for storing the critical hit multiplier
-            int criticalHitDamageMultiplier = pc.MainHand.CriticalHitDamageMultiplier;
+            int criticalHitDamageMultiplier = weapon.CriticalHitDamageMultiplier;
             //critical hit mechanism - triggered on a roll equal or higher than criticalHitRange  
             if ((attackRoll >= criticalHitRange) || (attackRoll == 20))
             {
@@ -346,7 +356,7 @@ namespace IceBlink
                 c.logText(Environment.NewLine, Color.Black);
 
                 #region onScoringHit script of used item
-                IceBlinkCore.ScriptSelectEditorReturnObject scriptItem = pc.MainHand.OnScoringHit;
+                IceBlinkCore.ScriptSelectEditorReturnObject scriptItem = weapon.OnScoringHit;
                 sf.frm.doScriptBasedOnFilename(scriptItem.FilenameOrTag, scriptItem.Parm1, scriptItem.Parm2, scriptItem.Parm3, scriptItem.Parm4);
                 #endregion
 
@@ -421,6 +431,9 @@ namespace IceBlink
             {
                 //sf.drawHitSymbolOnPC();
 
+				// * sinopip, 22.12.14
+                c.playCreatureHitSound(crtr);
+                //				
                 //Some addition to explain why the extra attack has happened
                 string attackResult = (damage.ToString() + " of " + pc.HP.ToString());
                 if (criticalHitScored == 1)

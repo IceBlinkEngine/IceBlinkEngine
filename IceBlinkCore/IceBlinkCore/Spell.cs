@@ -121,6 +121,9 @@ namespace IceBlinkCore
         private string spriteEndingFilename = "heal1x1End.spt";
         private string spellStartSound = "none";
         private string spellEndSound = "none";
+        // * sinopip, 20.12.14
+        private string spellIcon = "none";
+        //
         private int costSP = 0;
         private bool targetIsPC = false;
         private bool targetIsSelf = false;
@@ -239,6 +242,16 @@ namespace IceBlinkCore
             set { spellEndSound = value; }
         }
 
+        // * sinopip, 20.12.14
+        [XmlElement]
+        //[Browsable(true), TypeConverter(typeof(SoundConverter))]
+        [CategoryAttribute("01- Main"), DescriptionAttribute("Filename of icon displayed in spell selector (include extension)")]
+        public string SpellIcon
+        {
+            get { return spellIcon; }
+            set { spellIcon = value; }
+        }
+        
         [XmlElement]
         [CategoryAttribute("01 - Main"), DescriptionAttribute("How much SP this Spell costs")]
         public int CostSP

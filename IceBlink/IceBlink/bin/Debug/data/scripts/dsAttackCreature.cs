@@ -98,6 +98,10 @@ namespace IceBlink
             if ((attack >= defense) || (attackRoll == 20))
             {
                 sf.drawHitSymbolOnPC();
+				
+				// * sinopip, 22.12.14
+                c.playCreatureHitSound(crt);
+                //				
 //                c.refreshMap();
                 string attackResult = (damage.ToString() + " of " + pc.HP.ToString());
                 if (crticalHitScored == 1)

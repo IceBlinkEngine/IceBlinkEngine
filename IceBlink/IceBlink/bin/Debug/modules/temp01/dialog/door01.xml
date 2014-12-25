@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Convo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <subNodes>
+    <ContentNode idNum="0" orderNum="0" pcNode="true" linkTo="0">
+      <ShowOnlyOnce>false</ShowOnlyOnce>
+      <NodeIsActive>true</NodeIsActive>
+      <NodePortraitBitmap />
+      <NodeNpcName />
+      <NodeSound>none</NodeSound>
+      <conversationText>root</conversationText>
+      <IsExpanded>true</IsExpanded>
+      <subNodes>
+        <ContentNode idNum="1" orderNum="0" pcNode="false" linkTo="0">
+          <ShowOnlyOnce>false</ShowOnlyOnce>
+          <NodeIsActive>true</NodeIsActive>
+          <NodePortraitBitmap />
+          <NodeNpcName />
+          <NodeSound>none</NodeSound>
+          <conversationText>Door Action Options</conversationText>
+          <IsExpanded>true</IsExpanded>
+          <subNodes>
+            <ContentNode idNum="3" orderNum="0" pcNode="true" linkTo="0">
+              <ShowOnlyOnce>false</ShowOnlyOnce>
+              <NodeIsActive>true</NodeIsActive>
+              <NodePortraitBitmap />
+              <NodeNpcName />
+              <NodeSound>none</NodeSound>
+              <conversationText>Search for traps</conversationText>
+              <IsExpanded>false</IsExpanded>
+              <subNodes>
+                <ContentNode idNum="7" orderNum="0" pcNode="false" linkTo="0">
+                  <ShowOnlyOnce>false</ShowOnlyOnce>
+                  <NodeIsActive>true</NodeIsActive>
+                  <NodePortraitBitmap />
+                  <NodeNpcName />
+                  <NodeSound>none</NodeSound>
+                  <conversationText>There are no traps on this door.</conversationText>
+                  <IsExpanded>true</IsExpanded>
+                  <subNodes>
+                    <ContentNode idNum="8" orderNum="0" pcNode="true" linkTo="0">
+                      <ShowOnlyOnce>false</ShowOnlyOnce>
+                      <NodeIsActive>true</NodeIsActive>
+                      <NodePortraitBitmap />
+                      <NodeNpcName />
+                      <NodeSound>none</NodeSound>
+                      <conversationText>Continue</conversationText>
+                      <IsExpanded>true</IsExpanded>
+                      <subNodes>
+                        <ContentNode idNum="11" orderNum="0" pcNode="true" linkTo="1">
+                          <ShowOnlyOnce>false</ShowOnlyOnce>
+                          <NodeIsActive>true</NodeIsActive>
+                          <NodePortraitBitmap />
+                          <NodeNpcName />
+                          <NodeSound>none</NodeSound>
+                          <conversationText>Door Action Options</conversationText>
+                          <IsExpanded>true</IsExpanded>
+                          <subNodes />
+                          <actions />
+                          <conditions />
+                        </ContentNode>
+                      </subNodes>
+                      <actions />
+                      <conditions />
+                    </ContentNode>
+                  </subNodes>
+                  <actions />
+                  <conditions />
+                </ContentNode>
+              </subNodes>
+              <actions />
+              <conditions>
+                <Condition c_script="gcCheckHasSkillRanks.cs" c_btnAndOr="and" c_and="true" c_not="false" c_parameter_1="detectTraps" c_parameter_2="1" />
+              </conditions>
+            </ContentNode>
+            <ContentNode idNum="5" orderNum="1" pcNode="true" linkTo="0">
+              <ShowOnlyOnce>false</ShowOnlyOnce>
+              <NodeIsActive>true</NodeIsActive>
+              <NodePortraitBitmap />
+              <NodeNpcName />
+              <NodeSound>none</NodeSound>
+              <conversationText>Pick the lock</conversationText>
+              <IsExpanded>false</IsExpanded>
+              <subNodes>
+                <ContentNode idNum="12" orderNum="0" pcNode="false" linkTo="0">
+                  <ShowOnlyOnce>false</ShowOnlyOnce>
+                  <NodeIsActive>true</NodeIsActive>
+                  <NodePortraitBitmap />
+                  <NodeNpcName />
+                  <NodeSound>none</NodeSound>
+                  <conversationText>You opened the door.</conversationText>
+                  <IsExpanded>true</IsExpanded>
+                  <subNodes>
+                    <ContentNode idNum="14" orderNum="0" pcNode="true" linkTo="0">
+                      <ShowOnlyOnce>false</ShowOnlyOnce>
+                      <NodeIsActive>true</NodeIsActive>
+                      <NodePortraitBitmap />
+                      <NodeNpcName />
+                      <NodeSound>none</NodeSound>
+                      <conversationText>End Dialog</conversationText>
+                      <IsExpanded>true</IsExpanded>
+                      <subNodes />
+                      <actions>
+                        <Action a_script="gaSetThisPropLockedToFalse.cs" />
+                        <Action a_script="gaTurnLoSBlockingOff.cs" />
+                      </actions>
+                      <conditions />
+                    </ContentNode>
+                  </subNodes>
+                  <actions />
+                  <conditions />
+                </ContentNode>
+              </subNodes>
+              <actions />
+              <conditions>
+                <Condition c_script="gcCheckThisPropIsLocked.cs" c_btnAndOr="and" c_and="true" c_not="false" />
+                <Condition c_script="gcCheckThisPropNeedsKey.cs" c_btnAndOr="and" c_and="true" c_not="true" />
+                <Condition c_script="gcCheckHasSkillRanks.cs" c_btnAndOr="and" c_and="true" c_not="false" c_parameter_1="disableDevice" c_parameter_2="1" />
+              </conditions>
+            </ContentNode>
+            <ContentNode idNum="17" orderNum="2" pcNode="true" linkTo="0">
+              <ShowOnlyOnce>false</ShowOnlyOnce>
+              <NodeIsActive>true</NodeIsActive>
+              <NodePortraitBitmap />
+              <NodeNpcName />
+              <NodeSound>none</NodeSound>
+              <conversationText>Use a key</conversationText>
+              <IsExpanded>false</IsExpanded>
+              <subNodes>
+                <ContentNode idNum="18" orderNum="0" pcNode="false" linkTo="0">
+                  <ShowOnlyOnce>false</ShowOnlyOnce>
+                  <NodeIsActive>true</NodeIsActive>
+                  <NodePortraitBitmap />
+                  <NodeNpcName />
+                  <NodeSound>none</NodeSound>
+                  <conversationText>You opened the door.</conversationText>
+                  <IsExpanded>true</IsExpanded>
+                  <subNodes>
+                    <ContentNode idNum="19" orderNum="0" pcNode="true" linkTo="0">
+                      <ShowOnlyOnce>false</ShowOnlyOnce>
+                      <NodeIsActive>true</NodeIsActive>
+                      <NodePortraitBitmap />
+                      <NodeNpcName />
+                      <NodeSound>none</NodeSound>
+                      <conversationText>End Dialog</conversationText>
+                      <IsExpanded>true</IsExpanded>
+                      <subNodes />
+                      <actions>
+                        <Action a_script="gaSetThisPropLockedToFalse.cs" />
+                        <Action a_script="gaTurnLoSBlockingOff.cs" />
+                      </actions>
+                      <conditions />
+                    </ContentNode>
+                  </subNodes>
+                  <actions />
+                  <conditions>
+                    <Condition c_script="gcCheckThisPropPartyHasKey.cs" c_btnAndOr="and" c_and="true" c_not="false" />
+                  </conditions>
+                </ContentNode>
+                <ContentNode idNum="20" orderNum="1" pcNode="false" linkTo="0">
+                  <ShowOnlyOnce>false</ShowOnlyOnce>
+                  <NodeIsActive>true</NodeIsActive>
+                  <NodePortraitBitmap />
+                  <NodeNpcName />
+                  <NodeSound>none</NodeSound>
+                  <conversationText>You do not have the correct key for this lock.</conversationText>
+                  <IsExpanded>true</IsExpanded>
+                  <subNodes>
+                    <ContentNode idNum="21" orderNum="0" pcNode="true" linkTo="16">
+                      <ShowOnlyOnce>false</ShowOnlyOnce>
+                      <NodeIsActive>true</NodeIsActive>
+                      <NodePortraitBitmap />
+                      <NodeNpcName />
+                      <NodeSound>none</NodeSound>
+                      <conversationText>Leave the door alone</conversationText>
+                      <IsExpanded>true</IsExpanded>
+                      <subNodes />
+                      <actions />
+                      <conditions />
+                    </ContentNode>
+                  </subNodes>
+                  <actions />
+                  <conditions />
+                </ContentNode>
+              </subNodes>
+              <actions />
+              <conditions>
+                <Condition c_script="gcCheckThisPropIsLocked.cs" c_btnAndOr="and" c_and="true" c_not="false" />
+                <Condition c_script="gcCheckThisPropNeedsKey.cs" c_btnAndOr="and" c_and="true" c_not="false" />
+              </conditions>
+            </ContentNode>
+            <ContentNode idNum="6" orderNum="3" pcNode="true" linkTo="0">
+              <ShowOnlyOnce>false</ShowOnlyOnce>
+              <NodeIsActive>true</NodeIsActive>
+              <NodePortraitBitmap />
+              <NodeNpcName />
+              <NodeSound>none</NodeSound>
+              <conversationText>Bash open the door</conversationText>
+              <IsExpanded>false</IsExpanded>
+              <subNodes>
+                <ContentNode idNum="13" orderNum="0" pcNode="false" linkTo="0">
+                  <ShowOnlyOnce>false</ShowOnlyOnce>
+                  <NodeIsActive>true</NodeIsActive>
+                  <NodePortraitBitmap />
+                  <NodeNpcName />
+                  <NodeSound>none</NodeSound>
+                  <conversationText>You bashed open the door.</conversationText>
+                  <IsExpanded>true</IsExpanded>
+                  <subNodes>
+                    <ContentNode idNum="15" orderNum="0" pcNode="true" linkTo="0">
+                      <ShowOnlyOnce>false</ShowOnlyOnce>
+                      <NodeIsActive>true</NodeIsActive>
+                      <NodePortraitBitmap />
+                      <NodeNpcName />
+                      <NodeSound>none</NodeSound>
+                      <conversationText>End Dialog</conversationText>
+                      <IsExpanded>true</IsExpanded>
+                      <subNodes />
+                      <actions>
+                        <Action a_script="gaSetThisPropLockedToFalse.cs" />
+                        <Action a_script="gaTurnLoSBlockingOff.cs" />
+                      </actions>
+                      <conditions />
+                    </ContentNode>
+                  </subNodes>
+                  <actions />
+                  <conditions>
+                    <Condition c_script="gcCheckAttribute.cs" c_btnAndOr="and" c_and="true" c_not="false" c_parameter_1="-1" c_parameter_2="str" c_parameter_3="&gt;" c_parameter_4="13" />
+                  </conditions>
+                </ContentNode>
+                <ContentNode idNum="22" orderNum="1" pcNode="false" linkTo="0">
+                  <ShowOnlyOnce>false</ShowOnlyOnce>
+                  <NodeIsActive>true</NodeIsActive>
+                  <NodePortraitBitmap />
+                  <NodeNpcName />
+                  <NodeSound>none</NodeSound>
+                  <conversationText>You failed to open the door.</conversationText>
+                  <IsExpanded>true</IsExpanded>
+                  <subNodes>
+                    <ContentNode idNum="23" orderNum="0" pcNode="true" linkTo="16">
+                      <ShowOnlyOnce>false</ShowOnlyOnce>
+                      <NodeIsActive>true</NodeIsActive>
+                      <NodePortraitBitmap />
+                      <NodeNpcName />
+                      <NodeSound>none</NodeSound>
+                      <conversationText>Leave the door alone</conversationText>
+                      <IsExpanded>true</IsExpanded>
+                      <subNodes />
+                      <actions />
+                      <conditions />
+                    </ContentNode>
+                  </subNodes>
+                  <actions />
+                  <conditions />
+                </ContentNode>
+              </subNodes>
+              <actions />
+              <conditions>
+                <Condition c_script="gcCheckThisPropIsLocked.cs" c_btnAndOr="and" c_and="true" c_not="false" />
+                <Condition c_script="gcCheckThisPropNeedsKey.cs" c_btnAndOr="and" c_and="true" c_not="true" />
+              </conditions>
+            </ContentNode>
+            <ContentNode idNum="16" orderNum="4" pcNode="true" linkTo="0">
+              <ShowOnlyOnce>false</ShowOnlyOnce>
+              <NodeIsActive>true</NodeIsActive>
+              <NodePortraitBitmap />
+              <NodeNpcName />
+              <NodeSound>none</NodeSound>
+              <conversationText>Leave the door alone</conversationText>
+              <IsExpanded>true</IsExpanded>
+              <subNodes />
+              <actions>
+                <Action a_script="gaMovePartyToLastLocation.cs" />
+              </actions>
+              <conditions />
+            </ContentNode>
+          </subNodes>
+          <actions />
+          <conditions />
+        </ContentNode>
+      </subNodes>
+      <actions />
+      <conditions />
+    </ContentNode>
+  </subNodes>
+  <ConvoFileName>door01.xml</ConvoFileName>
+  <Narration>false</Narration>
+  <PartyChat>true</PartyChat>
+  <NpcPortraitBitmap>NOPORT_L.png</NpcPortraitBitmap>
+  <DefaultNpcName>Door</DefaultNpcName>
+  <NextIdNum>23</NextIdNum>
+</Convo>

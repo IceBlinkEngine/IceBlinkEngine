@@ -372,6 +372,16 @@ namespace IceBlinkToolset
         {
             sprite.IdleDelay = (int)numIdleDelay.Value;
         }
+        // * sinopip, 25.12.14
+        void NumDeathNoFValueChanged(object sender, EventArgs e)
+        {
+            sprite.DeathNumberOfFrames = (int)numDeathNoF.Value;
+        }
+        void NumDeathFPSValueChanged(object sender, EventArgs e)
+        {
+        	sprite.DeathFPS = (int)numDeathFPS.Value;        	
+        }        
+        //
         private void btnIdlePlay_Click(object sender, EventArgs e)
         {
             int row = 0; //idle animation is on the first row
@@ -408,6 +418,20 @@ namespace IceBlinkToolset
             }
             spriteActorFirstFrameDraw();
         }
+        // * sinopip, 25.12.14
+        void BtnDeathPlayClick(object sender, EventArgs e)
+        {
+            int row = 3; //attacking animation is on the first row
+            int sleep = 300;
+            if (sprite.DeathFPS != 0)
+                sleep = 1000 / sprite.DeathFPS;
+            for (int x = 0; x < sprite.DeathNumberOfFrames; x++)
+            {
+                spriteActorDraw(x, row, sleep);
+            }
+            spriteActorFirstFrameDraw();
+        }        
+        //
         private void btnIdleLoop_Click(object sender, EventArgs e)
         {
             int row = 0; //idle animation is on the first row
@@ -452,5 +476,6 @@ namespace IceBlinkToolset
             pbActor.Image = a_surface;
         }
         #endregion        
+        
     }
 }

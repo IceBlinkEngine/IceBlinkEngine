@@ -63,7 +63,15 @@ namespace IceBlink
         public int windowSize = 0;
         public float AdvLogScale = 1.2f;
         public bool touchScreenFeatures = false;
-
+        // * sinopip, 20.12.14
+        public int mouseX;
+        public int mouseY;
+		public bool is_upscrolling = false;
+		public bool is_downscrolling = false;
+		public bool is_leftscrolling = false;
+		public bool is_rightscrolling = false;
+		//
+		
         public Form1()
         {
             InitializeComponent();
@@ -78,6 +86,9 @@ namespace IceBlink
             FPStimer.Stop();
             realTimer.Enabled = true;
             realTimer.Stop();
+            // * sinopip, 20.12.14
+            scrollTimer.Stop();
+            //
         }      
         private void Form1_Load(object sender, EventArgs e)
         {            
@@ -139,6 +150,8 @@ namespace IceBlink
             //start updating FPS monitor
             //FPStimer.Start();
             realTimer.Start();
+            // * sinopip, 20.12.14
+            scrollTimer.Start();
         }
         private void SetupScreenSize()
         {
@@ -2575,6 +2588,10 @@ namespace IceBlink
         }
         private void renderPanel_MouseMove(object sender, MouseEventArgs e)
         {
+        	// * sinopip, 20.12.14
+        	mouseX = e.X;
+        	mouseY = e.Y;
+        	//
             int gridx = (e.X + game.upperLeftPixel.X) / game._squareSize;
             int gridy = (e.Y + game.upperLeftPixel.Y) / game._squareSize;
             if (gridx < 0) { gridx = 0; }
@@ -2582,6 +2599,22 @@ namespace IceBlink
             if (gridx > (game.currentArea.MapSizeInSquares.Width - 1)) { gridx = (game.currentArea.MapSizeInSquares.Width - 1); }
             if (gridy > (game.currentArea.MapSizeInSquares.Height - 1)) { gridy = (game.currentArea.MapSizeInSquares.Height - 1); }
             game.mouseMainMapLocation = new Point(gridx, gridy);
+            
+            // * sinopip, 20.12.14
+            // enable scroll area when mouse is on borders (scrollbar position values are negative)
+        	if (mouseX < 100 + -renderPanel.AutoScrollPosition.X) 
+        		is_leftscrolling = true;
+        	else is_leftscrolling = false;
+        	if (mouseY < 100 + -renderPanel.AutoScrollPosition.Y) 
+        		is_upscrolling = true;
+        	else is_upscrolling = false;
+        	if (mouseX > (renderPanel.Width-100) + -renderPanel.AutoScrollPosition.X)
+        		is_rightscrolling = true;
+        	else is_rightscrolling = false;
+        	if (mouseY > (renderPanel.Height-100) + -renderPanel.AutoScrollPosition.Y)
+        		is_downscrolling = true;
+        	else is_downscrolling = false;
+			//        	            
         }
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
@@ -4185,9 +4218,27 @@ namespace IceBlink
             doScriptBasedOnFilename("dsLeftPanelButtons.cs", (string)clickedButton.Tag, "", "", "");
             doPortraitStats();
         }
-
-        
-
-        
+       
+        // * sinopip, 20.12.14
+		// added a component timer (name is "scrollTimer") of 200ms tick        
+        void ScrollTimerTick(object sender, EventArgs e)
+        {
+        	if (is_leftscrolling) 
+        		renderPanel.AutoScrollPosition = new Point(
+        			-renderPanel.AutoScrollPosition.X - 10,
+        			-renderPanel.AutoScrollPosition.Y);
+        	if (is_rightscrolling) 
+        		renderPanel.AutoScrollPosition = new Point(
+        			-renderPanel.AutoScrollPosition.X + 10,
+        			-renderPanel.AutoScrollPosition.Y);
+        	if (is_upscrolling) 
+        		renderPanel.AutoScrollPosition = new Point(
+        			-renderPanel.AutoScrollPosition.X,
+        			-renderPanel.AutoScrollPosition.Y - 10);
+        	if (is_downscrolling) 
+        		renderPanel.AutoScrollPosition = new Point(
+        			-renderPanel.AutoScrollPosition.X,
+        			-renderPanel.AutoScrollPosition.Y + 10);   
+        }
     }
 }

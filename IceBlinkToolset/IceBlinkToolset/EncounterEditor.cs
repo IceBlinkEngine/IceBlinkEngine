@@ -47,10 +47,11 @@ namespace IceBlinkToolset
         public Bitmap g_walkPass;
         public Bitmap g_walkBlock;
         public Bitmap g_LoSBlock;
-
+        	
         public EncounterEditor(Module mod, Encounter encounter, Game g, ParentForm p)
         {
             InitializeComponent();
+            
             ee_mod = mod;
             ee_encounter = encounter;            
             ee_game = g;
@@ -542,7 +543,7 @@ namespace IceBlinkToolset
             gridy = e.Y / tileSize;
             mousex = e.X;
             mousey = e.Y;
-            lblMouseInfo.Text = "CURSOR " + e.X.ToString() + "," + e.Y.ToString() + " - GRID " + gridx.ToString() + "," + gridy.ToString();
+            lblMouseInfo.Text = "CURSORaffa " + e.X.ToString() + "," + e.Y.ToString() + " - GRID " + gridx.ToString() + "," + gridy.ToString();
             if ((selected) || (PCselected) || (propSelected))
             {
                 refreshMap();
@@ -564,7 +565,7 @@ namespace IceBlinkToolset
             }
         }
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
+        {     	
             try
             {
                 refreshMap();
@@ -993,6 +994,6 @@ namespace IceBlinkToolset
                 refreshMap();
                 pictureBox1.Image = drawArea;
             }
-        }
+        }      
     }
 }

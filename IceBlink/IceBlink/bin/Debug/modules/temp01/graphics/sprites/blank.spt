@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sprite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ImageLayout>
+    <X>1</X>
+    <Y>1</Y>
+  </ImageLayout>
+  <SpriteSize>
+    <Width>64</Width>
+    <Height>64</Height>
+  </SpriteSize>
+  <Filename>blank.spt</Filename>
+  <SpriteSheetFilename>blank.png</SpriteSheetFilename>
+  <Actor>false</Actor>
+  <Tag>blank</Tag>
+  <TopDown>false</TopDown>
+  <Animated>false</Animated>
+  <Show>true</Show>
+  <Visible>false</Visible>
+  <Looping>false</Looping>
+  <Location>
+    <X>0</X>
+    <Y>0</Y>
+  </Location>
+  <Frame>0</Frame>
+  <FrameRange>
+    <X>0</X>
+    <Y>59</Y>
+  </FrameRange>
+  <FPS>1</FPS>
+  <NumberOfFrames>1</NumberOfFrames>
+  <IdleNumberOfFrames>15</IdleNumberOfFrames>
+  <AttackingNumberOfFrames>15</AttackingNumberOfFrames>
+  <WalkingNumberOfFrames>15</WalkingNumberOfFrames>
+  <IdleFPS>15</IdleFPS>
+  <AttackingFPS>15</AttackingFPS>
+  <WalkingFPS>15</WalkingFPS>
+  <IdleDelay>2000</IdleDelay>
+</Sprite>

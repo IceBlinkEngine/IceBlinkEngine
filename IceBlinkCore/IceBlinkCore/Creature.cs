@@ -132,6 +132,11 @@ namespace IceBlinkCore
         private crCategory cr_category = crCategory.Melee; //catergory type (ranged, melee)
         private string cr_projSpriteFilename = "arrow.spt"; //sprite filename including .spt
         private string cr_attackSound = "none";
+        // * sinopip, 20.12.14
+        private string cr_onHitSound = "none";
+        private string cr_onBeingHitSound = "none"; // not implemented yet
+        private string cr_onDeathSound = "none";
+        //
         private int cr_baseAttBonus = 1;        
         private int cr_baseAttBonusAdders = 0;
         private int cr_numberOfAttacks = 1;
@@ -492,7 +497,26 @@ namespace IceBlinkCore
         {
             get { return cr_attackSound; }
             set { cr_attackSound = value; }
-        }        
+        }   
+        
+        // * sinopip, 20.12.14
+        [XmlElement]
+        [Browsable(true), TypeConverter(typeof(SoundConverter))]
+        [CategoryAttribute("00 - Basic Creature"), DescriptionAttribute("Filename of sound to play when the creature hits with an attack (include extension)")]
+        public string OnHitSound
+        {
+            get { return cr_onHitSound; }
+            set { cr_onHitSound = value; }
+        }             
+        [XmlElement]
+        [Browsable(true), TypeConverter(typeof(SoundConverter))]
+        [CategoryAttribute("00 - Basic Creature"), DescriptionAttribute("Filename of sound to play when the creature dies (include extension)")]
+        public string OnDeathSound
+        {
+            get { return cr_onDeathSound; }
+            set { cr_onDeathSound = value; }
+        }             
+        //
         #endregion
 
         public Creature() : base()
